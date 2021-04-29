@@ -1,0 +1,30 @@
+/* slider styles */
+.slick-list {
+    
+}
+ul.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+.slick-dots li{
+    list-style: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #868686;
+    margin: 0 5px;
+}
+
+.slick-dots li button{
+    display: none!important;
+}
+
+.slick-dots li.slick-active{
+    border: 1px solid #E92424;
+    background-color: #E92424;
+}

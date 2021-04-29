@@ -1,0 +1,63 @@
+.busketCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 5px 4px 15px;
+    border-radius: 31px;
+    background-color: #E5E5E5
+}
+.basket{
+    margin-top: 10.76px;
+    position: relative;
+    >img{
+        width: 19.5px;
+        height: 18.98px;
+    }
+    .counterBasket{
+        position: absolute;
+        top: -7.76px;
+        left: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #E92424;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 500;
+        text-align: center;
+        padding-top: .5px;
+    }
+}
+.btn{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #E92424;
+    border-radius: 36px;
+    padding: 10px 23px 10px 24px;
+    margin-left: 9.5px;
+}
+@media screen and( min-width: 621px ){
+    .busketCont{
+        padding: 6px 7px 5px 17px;
+    }
+    .basket{
+        margin-top: 8.76px;
+        >img{
+            width: 26px;
+            height: 25.3px;
+        }
+        .counterBasket{
+            width: 20px;
+            height: 20px;
+            padding-top: 3px;
+        }
+    }
+    .btn{
+        padding: 12px 28px 12px 29px;
+        margin-left: 16.53px;
+    }
+}
