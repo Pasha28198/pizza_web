@@ -1,6 +1,7 @@
 import Categories from './categories'
 import Basket from './basket'
 import InfoBlock from './infoBlock'
+import BurgerIcon from './burgerIcon'
 
 import styles from './styles.module.scss'
 
@@ -22,11 +23,7 @@ export default function Header(){
                     <div >
                         <Basket />
                     </div>
-                    <div className={styles.menuCont}>
-                        <div className={styles.menuIcon1} />
-                        <div className={styles.menuIcon2} />
-                        <div className={styles.menuIcon3} />
-                    </div>
+                    <BurgerIcon />
                     <div className={styles.userIcon}>
                         <img src={user} alt=''/>
                     </div>

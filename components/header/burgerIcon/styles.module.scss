@@ -1,0 +1,31 @@
+.menuCont{
+    &:hover{
+        cursor: pointer;
+    }
+}
+.menuCont:before,
+.menuCont:after,
+.menuCont div {
+  background: #4D4D4D;
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 20px;
+  border-radius: 3px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.menuCont:hover:before {
+  transform: translateY(7px) rotate(135deg);
+}
+.menuCont:hover:after {
+  transform: translateY(-7px) rotate(-135deg);
+}
+.menuCont:hover div {
+  transform: scale(0);
+}
+@media screen and ( min-width: 1200px){
+    .menuCont{
+        display: none;
+    }
+}

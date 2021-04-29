@@ -17,21 +17,6 @@
 .categoriesMax{
     display: none;
 }
-.menuCont{
-    .menuIcon1, .menuIcon2, .menuIcon3{
-        width: 20px;
-        height: 2px;
-        background-color: #4D4D4D;
-        margin-bottom: 4.72px;
-        border-radius: 10px;
-    }
-    .menuIcon1{
-        margin-top: 0.72px;
-    }
-    .menuIcon3{
-        margin-bottom: 0;
-    }
-}
 .userIcon{
     display: none;
 }
@@ -47,9 +32,6 @@
 @media screen and ( min-width: 1200px){
     .headerCont{
         padding: 19px 155.67px 19px 154px;
-    }
-    .menuCont{
-        display: none;
     }
     .userIcon{
         display: block;
