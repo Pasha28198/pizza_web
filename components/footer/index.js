@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './styles.module.scss'
 
 import logo from '../../assets/footerIcon/LOGO.svg'
@@ -16,9 +17,15 @@ export default function Footer(){
                         <div className={styles.logo}>
                             <img src={logo} alt='logo'/>
                         </div>
-                        <a href='#'>Про нас</a>
-                        <a href='#'>Доставка і оплата</a>
-                        <a href='#'>Новини</a>
+                        <Link href='#'>
+                            <a>Про нас</a>
+                        </Link>
+                        <Link href='#'>
+                            <a>Доставка і оплата</a>
+                        </Link>
+                        <Link href='#'>
+                            <a>Новини</a>
+                        </Link>
                     </div>
                     <div className={styles.contacts}>
                         <h4>Контакти</h4>
@@ -37,9 +44,15 @@ export default function Footer(){
                     </div>
                     <div className={styles.menu}>
                         <h4>Меню</h4>
-                        <a href='#'>Піца</a>
-                        <a href='#'>Салати</a>
-                        <a href='#'>Напої</a>
+                        <Link href='#'>
+                            <a>Піца</a>
+                        </Link>
+                        <Link href='#'>
+                            <a>Салати</a>
+                        </Link>
+                        <Link href='#'>
+                            <a>Напої</a>
+                        </Link>
                     </div>
                     <div className={styles.creditCards}>
                         <span>Підтримувані платежі:</span>

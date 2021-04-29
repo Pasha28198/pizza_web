@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BurgerIcon from '../header/burgerIcon/index'
 
 import styles from './styles.module.scss'
@@ -9,9 +10,15 @@ export default function MobileMenu(){
                 <BurgerIcon />
             </div>
             <nav className={styles.mobNav}>
-                <a href='#'>Про нас</a>
-                <a href='#'>Доставка і оплата</a>
-                <a href='#'>Новини</a>
+                <Link href='#'>
+                    <a>Про нас</a>
+                </Link>
+                <Link href='#'>
+                    <a>Доставка і оплата</a>
+                </Link>
+                <Link href='#'>
+                    <a>Новини</a>
+                </Link>
             </nav>
             <button className={styles.btnMobMenu}>Увійти</button>
             <div className={styles.contacts}>
