@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import Categories from './categories'
 import Basket from './basket'
 import InfoBlock from './infoBlock'
@@ -25,7 +27,9 @@ export default function Header(){
                     </div>
                     <BurgerIcon />
                     <div className={styles.userIcon}>
-                        <img src={user} alt=''/>
+                        <Link href='/user'>
+                            <img src={user} alt=''/>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.categoriesMin}>
