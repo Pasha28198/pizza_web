@@ -1,0 +1,41 @@
+
+.userIcon{
+    display: none;
+    position: relative;
+    &:hover{
+        .btnCont{
+            display: block;
+        }
+    }
+}
+.btnCont{
+    position: absolute;
+    top: 0px;
+    right: -37px;
+    z-index: 15;
+    padding-top: 45px;
+    display: none;
+}
+.loginBtn{
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+    padding: 15px 40px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.15);
+    &:hover{
+        cursor: pointer;
+    }
+}
+@media screen and ( min-width: 1200px){
+    .userIcon{
+        display: block;
+        margin-left: 21.64px;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

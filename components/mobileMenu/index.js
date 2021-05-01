@@ -1,5 +1,7 @@
 import Link from 'next/link'
+
 import { useMobileMenuCtx } from '../../context/mibileMenuCtx'
+
 import BurgerIcon from '../header/burgerIcon/index'
 
 import styles from './styles.module.scss'
