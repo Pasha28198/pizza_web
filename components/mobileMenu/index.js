@@ -1,11 +1,15 @@
 import Link from 'next/link'
+import { useMobileMenuCtx } from '../../context/mibileMenuCtx'
 import BurgerIcon from '../header/burgerIcon/index'
 
 import styles from './styles.module.scss'
 
 export default function MobileMenu(){
+
+    let { open } = useMobileMenuCtx()
+
     return(
-        <div className={styles.mobileMenuCont}>
+        <div className={open ? styles.mobileMenuContX : styles.mobileMenuCont}>
             <div className={styles.closeBtn}>
                 <BurgerIcon />
             </div>

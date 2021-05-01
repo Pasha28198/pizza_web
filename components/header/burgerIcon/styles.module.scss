@@ -1,11 +1,14 @@
-.menuCont{
+.menuCont, .menuContX{
     &:hover{
         cursor: pointer;
     }
 }
 .menuCont:before,
 .menuCont:after,
-.menuCont div {
+.menuCont div,
+.menuContX:before,
+.menuContX:after,
+.menuContX div {
   background: #4D4D4D;
   content: " ";
   display: block;
@@ -15,17 +18,20 @@
   margin: 5px 0;
   transition: 0.5s;
 }
-.menuCont:hover:before {
+.menuContX:before {
   transform: translateY(7px) rotate(135deg);
 }
-.menuCont:hover:after {
+.menuContX:after {
   transform: translateY(-7px) rotate(-135deg);
 }
-.menuCont:hover div {
+.menuContX div {
   transform: scale(0);
 }
 @media screen and ( min-width: 1200px){
     .menuCont{
         display: none;
+    }
+    .menuContX{
+      display: none;
     }
 }
