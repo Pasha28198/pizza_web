@@ -12,7 +12,10 @@ export default function UserIcon(){
             </Link>
             <div className={styles.btnCont}>
                 <button className={styles.loginBtn}>
-                    Увійти
+                Особистий кабінет
+                </button>
+                <button className={styles.exitBtn}>
+                    Вийти
                 </button>
             </div>
         </div>
