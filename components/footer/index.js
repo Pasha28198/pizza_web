@@ -44,13 +44,13 @@ export default function Footer(){
                     </div>
                     <div className={styles.menu}>
                         <h4>Меню</h4>
-                        <Link href='#'>
+                        <Link href='/'>
                             <a>Піца</a>
                         </Link>
-                        <Link href='#'>
+                        <Link href='salad'>
                             <a>Салати</a>
                         </Link>
-                        <Link href='#'>
+                        <Link href='drinks'>
                             <a>Напої</a>
                         </Link>
                     </div>

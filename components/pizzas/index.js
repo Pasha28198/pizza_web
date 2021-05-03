@@ -1,7 +1,7 @@
 import PizzaItem from './PizzaItem/index'
 import styles from './styles.module.scss'
 
-export default function MainContent(){
+export default function Pizzas(){
     return(
         <div className='container'>
             <div className={styles.pizzaType}>

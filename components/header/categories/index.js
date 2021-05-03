@@ -8,7 +8,7 @@ import salad from '../../../assets/headerIcons/salad.svg'
 export default function Categories(){
     return(
         <div className={styles.categories}>
-            <Link href='#'>
+            <Link href='/'>
                 <a>
                     <div className={styles.catItem}>
                         <div className={styles.imgCont1}>
@@ -18,7 +18,7 @@ export default function Categories(){
                     </div>
                 </a>
             </Link>
-            <Link href='#'>
+            <Link href='/salad'>
                 <a>
                     <div className={styles.catItem}>
                         <div className={styles.imgCont2}>
@@ -28,7 +28,7 @@ export default function Categories(){
                     </div>
                 </a>
             </Link>
-            <Link href='#'>
+            <Link href='/drinks'>
                 <a>
                     <div className={styles.catItem}>
                         <div className={styles.imgCont3}>
