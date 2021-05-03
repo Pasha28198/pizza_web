@@ -1,7 +1,9 @@
+import SaladList from "../components/salad";
+
 export default function Salad(){
     return(
         <div>
-            Salad
+            <SaladList />
         </div>
     )
 }
