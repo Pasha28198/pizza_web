@@ -26,7 +26,8 @@ export default function MobileMenu(){
                     <a>Новини</a>
                 </Link>
             </nav>
-            <button className={styles.btnMobMenu}>Увійти</button>
+            <button className={styles.btnMobMenu}>Особистий кабінет</button>
+            <button className={styles.btnMobMenuExit}>Вийти</button>
             <div className={styles.contacts}>
                 <h4>Контакти:</h4>
                 <p>+38 (067) 63 71 444</p>

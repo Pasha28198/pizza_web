@@ -1,6 +1,12 @@
 .userIcon{
-    display: none;
+    display: block;
     position: relative;
+    margin: 0 24.67px 0 21.67px;
+    padding-top: 4px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
     &:hover{
         .btnCont{
             display: block;
@@ -24,7 +30,7 @@
     line-height: 1.2;
     font-weight: 400;
     color: #000000;
-    padding: 15px 40px 10px;
+    padding: 15px 40px 12px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
     box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.15);
@@ -39,20 +45,16 @@
     line-height: 1.2;
     font-weight: 400;
     color: #E92424;
-    padding: 0px 40px 15px;
+    padding: 12px 40px 15px;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
+    border-top: 1px solid #E5E5E5;
     &:hover{
         cursor: pointer;
     }
 }
-@media screen and ( min-width: 1200px){
+@media screen and(mim-width: 1200px) {
     .userIcon{
-        display: block;
-        margin-left: 21.64px;
-        img{
-            width: 20px;
-            height: 20px;
-        }
+        margin: 0 18.65px;
     }
 }

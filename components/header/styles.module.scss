@@ -7,19 +7,26 @@
     }
 }
 .logoCont{
+    margin-right: 32px;
     >img{
         width: 51px;
         height: 36px; 
     }
 }
+.categoriesMin{
+    justify-content: space-around;
+}
 .categoriesMax{
     display: none;
 }
 
-@media screen and ( min-width: 621px) {
+@media screen and ( min-width: 731px) {
     .categoriesMin{
         display: none;
     }   
+    .logoCont{
+        margin-right: 5px;
+    }
     .categoriesMax{
         display: flex;
         justify-content: flex-start;

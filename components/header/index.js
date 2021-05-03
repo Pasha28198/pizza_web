@@ -24,8 +24,8 @@ export default function Header(){
                     <div >
                         <Basket />
                     </div>
-                    <BurgerIcon />
                     <UserIcon />
+                    <BurgerIcon />
                 </div>
                 <div className={styles.categoriesMin}>
                     <Categories />

@@ -18,15 +18,6 @@ export default function MainContent(){
                     <PizzaItem />
                 </div>
             </div>
-            <div className={styles.pizzaType}>
-                <h2>Чікагська піцца</h2>
-                <div>
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
-                </div>
-            </div>
         </div>
     )
 }

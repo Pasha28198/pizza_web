@@ -3,6 +3,7 @@ import styles from './styles.module.scss'
 import pizzaImg from '../../../assets/pizzaItemImg/pizza.png'
 import pizzaImgDeck from '../../../assets/pizzaItemImg/pizzaDeck.png'
 import heart from '../../../assets/pizzaItemImg/Heart.svg'
+import HeartSvg from '../../svgImg/heartSvg'
 
 export default function PizzaItem(){
     return(
@@ -18,7 +19,8 @@ export default function PizzaItem(){
                         <p>250 гр</p>
                     </div>
                     <div>
-                        <img src={heart} alt='like'/>
+                        <HeartSvg/>
+                        {/* <img src={heart} alt='like'/> */}
                     </div>
                 </div>
                 <div className={styles.itemSubtitle}>
