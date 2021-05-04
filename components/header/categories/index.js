@@ -1,9 +1,10 @@
 import Link from 'next/link'
-import styles from './styles.module.scss'
 
-import water from '../../../assets/headerIcons/water.svg'
-import pizza from '../../../assets/headerIcons/pizza.svg'
-import salad from '../../../assets/headerIcons/salad.svg'
+import PizzaSvg from '../../svgImg/pizzaSvg'
+import SaladSvg from '../../svgImg/saladSvg'
+import DrinksSvg from '../../svgImg/drinksSvg'
+
+import styles from './styles.module.scss'
 
 export default function Categories(){
     return(
@@ -12,7 +13,7 @@ export default function Categories(){
                 <a>
                     <div className={styles.catItem}>
                         <div className={styles.imgCont1}>
-                            <img src={pizza} alt=''/>
+                            <PizzaSvg />
                         </div>
                         <div>Піцци</div>
                     </div>
@@ -22,7 +23,7 @@ export default function Categories(){
                 <a>
                     <div className={styles.catItem}>
                         <div className={styles.imgCont2}>
-                            <img src={salad} alt=''/>
+                            <SaladSvg />
                         </div>
                         <div>Салати</div>
                     </div>
@@ -32,7 +33,7 @@ export default function Categories(){
                 <a>
                     <div className={styles.catItem}>
                         <div className={styles.imgCont3}>
-                            <img src={water} alt=''/>
+                            <DrinksSvg />
                         </div>                        
                         <div>Напої</div>
                     </div>
