@@ -1,11 +1,18 @@
+import { useState } from 'react'
+
+import HeartSvg from '../../svgImg/heartSvg'
+import HeartYel from '../../svgImg/heartYelSvg'
+
 import styles from './styles.module.scss'
 
 import pizzaImg from '../../../assets/pizzaItemImg/pizza.png'
 import pizzaImgDeck from '../../../assets/pizzaItemImg/pizzaDeck.png'
-import heart from '../../../assets/pizzaItemImg/Heart.svg'
-import HeartSvg from '../../svgImg/heartSvg'
+
 
 export default function PizzaItem(){
+
+    const [isLike, setIsLike] = useState(false)
+
     return(
         <div className={styles.itemContainer}>
             <div className={styles.itemImg}>
@@ -18,9 +25,8 @@ export default function PizzaItem(){
                         <h4>Маргарита </h4>
                         <p>250 гр</p>
                     </div>
-                    <div>
-                        <HeartSvg/>
-                        {/* <img src={heart} alt='like'/> */}
+                    <div onClick={()=>setIsLike(!isLike)} className={styles.svgCont}>
+                        {isLike ? <HeartYel /> : <HeartSvg />}
                     </div>
                 </div>
                 <div className={styles.itemSubtitle}>

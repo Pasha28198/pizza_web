@@ -51,14 +51,14 @@
                 color: #404040;
             }
         }
-        &:nth-child(2){
-            >svg{
-                width: 24px;
-                height: 21.33px;
-                &:hover{
-                    cursor: pointer;
-                }
-            }
+    }
+}
+.svgCont{
+    >svg{
+        width: 24px;
+        height: 21.33px;
+        &:hover{
+            cursor: pointer;
         }
     }
 }

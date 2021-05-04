@@ -1,10 +1,17 @@
+import { useState } from 'react'
+
+import HeartYel from '../../svgImg/heartYelSvg'
+import HeartSvg from '../../svgImg/heartSvg'
+
 import styles from './styles.module.scss'
 
-import HeartSvg from '../../svgImg/heartSvg'
 import saladMob from '../../../assets/saladItemImg/saladMob.png'
 import salad from '../../../assets/saladItemImg/salad.png'
 
 export default function SaladItem(){
+
+    const [isLike, setIsLike] = useState(false)
+
     return(
         <div className={styles.saladCont}>
             <div className={styles.imgCont}>
@@ -17,8 +24,8 @@ export default function SaladItem(){
                         <h4>Маргарита </h4>
                         <p>250 гр</p>
                     </div>
-                    <div>
-                        <HeartSvg />
+                    <div onClick={()=>setIsLike(!isLike)} className={styles.svgCont}>
+                        {isLike ? <HeartYel /> : <HeartSvg />}
                     </div>
                 </div>
                 <p>

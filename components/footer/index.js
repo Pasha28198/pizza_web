@@ -47,10 +47,10 @@ export default function Footer(){
                         <Link href='/'>
                             <a>Піца</a>
                         </Link>
-                        <Link href='salad'>
+                        <Link href='/salad'>
                             <a>Салати</a>
                         </Link>
-                        <Link href='drinks'>
+                        <Link href='/drinks'>
                             <a>Напої</a>
                         </Link>
                     </div>
