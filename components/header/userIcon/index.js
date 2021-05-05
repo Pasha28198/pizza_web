@@ -3,6 +3,8 @@ import Link from 'next/link'
 import styles from './styles.module.scss'
 
 import user from '../../../assets/headerIcons/user.svg'
+import userBtn from '../../../assets/headerIcons/userBtn.svg'
+import logoutBtn from '../../../assets/headerIcons/logoutBtn.svg'
 
 export default function UserIcon(){
     return(
@@ -13,10 +15,12 @@ export default function UserIcon(){
             <div className={styles.btnCont}>
                 <Link href='/user'>
                     <button className={styles.loginBtn}>
-                    Особистий кабінет
+                        <img src={userBtn} alt=''/>
+                        Особистий кабінет
                     </button>
                 </Link>
                 <button className={styles.exitBtn}>
+                    <img src={logoutBtn} alt=''/>
                     Вийти
                 </button>
             </div>

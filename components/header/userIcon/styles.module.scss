@@ -53,6 +53,15 @@
         cursor: pointer;
     }
 }
+.exitBtn, .loginBtn{
+    display: flex;
+    align-items: center;
+    >img{
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+}
 @media screen and(mim-width: 1200px) {
     .userIcon{
         margin: 0 18.65px;
