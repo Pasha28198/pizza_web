@@ -1,10 +1,15 @@
 import styles from './styles.module.scss'
 
 import xmark from '../../../assets/userInfo/xmark.svg'
+import Backdrop from '../../backdrop'
+import AdressModal from '../../adressModal'
 
 export default function UserInfo(){
     return(
         <div className={styles.userInfoCont}>
+            <Backdrop>
+                <AdressModal />
+            </Backdrop>
             <h4>Основна інформація:</h4>
             <form className={styles.info}>
                 <div>
