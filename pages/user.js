@@ -1,14 +1,9 @@
-import OrderHistory from "../components/user/orderHistory";
-import UserInfo from "../components/user/userlInfo";
+import UserContent from "../components/user";
 
 export default function User(){
     return(
         <div className='container'>
-            <h1 className='userTitle'>Особистий кабінет</h1>
-            <div className='userInfoCont'>
-                <UserInfo />
-                <OrderHistory />
-            </div>
+            <UserContent />
         </div>
     )
 }

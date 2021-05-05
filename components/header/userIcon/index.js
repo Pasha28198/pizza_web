@@ -7,13 +7,15 @@ import user from '../../../assets/headerIcons/user.svg'
 export default function UserIcon(){
     return(
         <div className={styles.userIcon}>
-            <Link href='/user'>
+            
                 <img src={user} alt=''/>
-            </Link>
+            
             <div className={styles.btnCont}>
-                <button className={styles.loginBtn}>
-                Особистий кабінет
-                </button>
+                <Link href='/user'>
+                    <button className={styles.loginBtn}>
+                    Особистий кабінет
+                    </button>
+                </Link>
                 <button className={styles.exitBtn}>
                     Вийти
                 </button>

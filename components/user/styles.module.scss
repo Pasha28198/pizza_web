@@ -1,0 +1,25 @@
+.userInfoCont{
+    text-align: center;
+    padding: 40px 8px 40px 7px;
+  }
+  .userTitle{
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #0B0B0B;
+    margin-bottom: 12px;
+  }
+  @media screen and ( min-width: 621px){
+    .userTitle{
+      font-size: 48px;
+      margin: 60px auto 40px;
+    }
+  }
+  @media screen and ( min-width: 1440px){
+    .userInfoCont{
+      padding: 0 154px 217px 154px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+  
