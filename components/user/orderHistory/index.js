@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export default function OrderHistory(){
     return(
         <div className={styles.userInfoCont}>
-            <h4>Історія замовлень:</h4>
+            <h4>Вподобана їжа:</h4>
             <div className={styles.info}>
                 <LikedItem />
                 <LikedItem />

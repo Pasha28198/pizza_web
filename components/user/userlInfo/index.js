@@ -51,13 +51,13 @@ export default function UserInfo(){
                 <div className={styles.adressCont}>
                     <p>Адреса:</p>
                     <div>
-                        {/* <div className={styles.adressItem}>
+                        <div className={styles.adressItem}>
                             <p>Вул. Дегтярівська, 5б, кв. 7</p>
                             <img src={xmark} alt='del'/>
-                        </div> */}
+                        </div>
                         <div className={styles.adressEdit}>
                             <button>Додати адресу</button>
-                            {/* <button>Редагувати</button> */}
+                            <button>Редагувати</button>
                         </div>
                     </div>
                 </div>

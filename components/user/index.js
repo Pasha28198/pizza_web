@@ -5,7 +5,7 @@ import UserInfo from './userlInfo'
 export default function UserContent(){
     return(
         <div className={styles.userInfoCont}>
-            <h1 className={styles.userTitle}>Особистий кабінет</h1>
+            <h4 className={styles.userTitle}>Особистий кабінет</h4>
             <div className={styles.serInfoCont}>
                 <UserInfo />
                 <OrderHistory />

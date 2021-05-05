@@ -14,6 +14,10 @@ export default function LikedItem(){
                 <div className={styles.infoCont}>
                     <h5>Салат</h5>
                     <p>250 гр</p>
+                    <p>
+                        Соус вершковий, сир моцарела, 
+                        сир рокфор, сир пармезан, сир брі...
+                    </p>
                 </div>
             </div>
             
