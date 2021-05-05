@@ -24,7 +24,8 @@ export default function UserInfo(){
                     />
                 </div>
                 <div>
-                    <label htmlFor='birthday'>ДН:</label>
+                    <label className={styles.bithMob} htmlFor='birthday'>ДН:</label>
+                    <label className={styles.bithBig} htmlFor='birthday'>День народження:</label>
                     <input 
                         id='birthday'
                         type=''

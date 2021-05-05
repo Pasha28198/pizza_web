@@ -51,6 +51,9 @@
         }
     }
 }
+.bithBig{
+    display: none;
+}
 .adressCont{
     align-items: flex-start!important;
 }
@@ -65,6 +68,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.2;
+        white-space: nowrap;
     }
     >img{
         width: 12px;
@@ -81,14 +85,12 @@
         font-family: 'Fira Sans', sans-serif;
         &:nth-child(1){
             font-size: 16px;
-            // text-decoration: underline;
             border-bottom: 1px solid #E92424;
             line-height: 1.2;
             color: #E92424;
         }
         &:nth-child(2){
             font-size: 16px;
-            // text-decoration: underline;
             border-bottom: 1px solid #4D4D4D;
             line-height: 1.2;
             color: #4D4D4D;
@@ -113,14 +115,10 @@
         background-color: #CC1111;
     }
 }
-@media  screen and (min-width: 720px) {
-    .userInfoCont{
-        margin-right: 20px;
-    }
-}
-@media screen and(min-width: 1180px){
+@media screen and(min-width: 1221px){
     .userInfoCont{
         >h4{
+            text-align: left;
             font-weight: 400;
             font-size: 24px;
             line-height: 1.2;
@@ -133,36 +131,33 @@
         }
     }
     .info{
+        max-width: 468px;
         border: 1px solid #E0E0E0;
         border-radius: 16px;
         background: #FFFFFF;
-        padding: 50px 115px 42px 50px;
-        display: flex;
-        flex-direction: column;
+        padding: 40px 40px 40px 32px;
+        margin-right: 20px;
         >div{
-            display: flex;
-            margin-bottom: 30px;
-            &:nth-last-child(-n+1){
-                margin-bottom: 0;
-            }
-            >p{
-                display: inline-block;
-                &:nth-child(1){
-                    color: #656565;
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 1.2;
-                    width: 111px;
-                    margin-right: 42px;
-                }
-                &:nth-child(2){
-                    color: #000000;
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 1.2;
-                    max-width: 236px;
-                }
+            >label, >p{
+                width: 105px;
+                margin-right: 10px;
             }
         }
+    }
+    .bithMob{
+        display: none;
+    }
+    .bithBig{
+        display: inline-block;
+    }
+    .adressItem{
+        >img{
+            margin-left: 34px;
+        }
+    }
+}
+@media screen and ( min-width: 1440px){
+    .info{
+        padding: 40px 62px 40px 43px;
     }
 }
