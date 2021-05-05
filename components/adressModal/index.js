@@ -10,7 +10,7 @@ export default function AdressModal(){
                     <img src={xGrey} alt='X'/>
                     <div>
                         <label htmlFor='city'>Місто:*</label>
-                        <select id='city'>
+                        <select required id='city'>
                             <option defaultValue value='Івано-Франківськ'>
                                 Івано-Франківськ
                             </option>
@@ -21,6 +21,7 @@ export default function AdressModal(){
                     <div>
                         <label htmlFor='street'>Вулиця:*</label>
                         <input 
+                            required
                             type='text' 
                             id='street'
                             placeholder='Вкажіть вашу вулицю'
@@ -36,7 +37,11 @@ export default function AdressModal(){
                     <div className={styles.privat}>
                         <div>
                             <label htmlFor='house'>Будинок:*</label>
-                            <input  type='text' id='house'/>
+                            <input  
+                                required
+                                type='text' 
+                                id='house'
+                            />
                         </div>
                         <div>
                             <label htmlFor='flat'>Квартира:</label>

@@ -7,9 +7,9 @@ import AdressModal from '../../adressModal'
 export default function UserInfo(){
     return(
         <div className={styles.userInfoCont}>
-            <Backdrop>
+            {/* <Backdrop>
                 <AdressModal />
-            </Backdrop>
+            </Backdrop> */}
             <h4>Основна інформація:</h4>
             <form className={styles.info}>
                 <div>
