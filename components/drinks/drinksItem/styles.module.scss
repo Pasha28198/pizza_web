@@ -1,24 +1,24 @@
-.saladCont{
-    width: 335px;
+.drinksCont{
+    width: 336px;
     margin-bottom: 20px;
     &:nth-last-child(-n+1){
         margin-bottom: 0;
     }
 }
 .imgCont{
-    width: 335px;
-    height: 270px;
+    width: 336px;
+    height: 304px;
     >img{
         &:nth-child(1){
-            width: 335px;
-            height: 270px;
+            width: 336px;
+            height: 304px;
         }
         &:nth-child(2){
             display: none;
         }
     }
 }
-.saladInfo{
+.drinksInfo{
     padding: 12px 24px 20px;
     border-bottom: 1px solid #E5E5E5; 
     border-left: 1px solid #E5E5E5; 
@@ -30,7 +30,7 @@
         font-weight: 400;
         line-height: 1.2;
         color: #404040;
-        margin-bottom: 16px;
+        margin-bottom: 14px;
     }
 }
 .infoSup{
@@ -45,13 +45,6 @@
                 line-height: 1.2;
                 color: #000000;
             }
-            >p{
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 1.2;
-                font-style: italic;
-                color: #404040;
-            }
         }
     }
 }
@@ -63,6 +56,32 @@
             cursor: pointer;
         }
     }
+}
+.volumeBtn{
+    display: none;
+    margin-bottom: 20px;
+    >button{
+        flex: 1 1 auto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #404040;
+        background: #F5F5F5;
+        border-radius: 7px;
+        padding: 9px 0 8px 0;
+        transition: background 0.3s linear;
+        &:hover{
+            cursor: pointer;
+            background: #FFE178;
+        }
+        &:nth-child(1){
+            margin-right: 5px;
+        }
+        &:nth-child(3){
+            margin-left: 5px;
+        }
+    }
+    
 }
 .infoSub{
     display: flex;
@@ -90,8 +109,7 @@
     }
 }
 @media screen and ( min-width: 700px){
-    .saladCont{
-        width: 336px;
+    .drinksCont{
         margin-bottom: 14px;
         margin-right: 14px;
         &:nth-last-child(-n+1){
@@ -99,8 +117,6 @@
         }
     }
     .imgCont{
-        width: 336px;
-        height: 304px;
         >img{
             &:nth-child(1){
                 display: none;
@@ -114,32 +130,32 @@
     }
 }
 @media screen and (min-width: 1200px){
-    .saladInfo{
+    .drinksInfo{
         padding: 41px 24px 44px;
+        background-color: #FFFFFF;
     }
     .infoSub{
         >button{
             display: none;
         }
     }
-    .saladCont{
+    .drinksCont{
         position: relative;
-        background-color: #FFFFFF;
         &:hover{
-            .saladInfo{
+            .drinksInfo{
+                padding: 41px 24px 20px;
                 position: absolute;
                 top: 304px;
                 left: 0;
-                z-index: 15px;
-                padding: 41px 24px 20px;
-                >p{
-                    margin-bottom: 10px;
-                }
+                z-index: 15;
             }
             .infoSub{
                 >button{
                     display: block;
                 }   
+            }
+            .volumeBtn{
+                display: flex;
             }
         }
     }
