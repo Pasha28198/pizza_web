@@ -1,0 +1,51 @@
+.likedCont{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 16px 22px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.imgCont{
+    display: flex;
+    >img{
+        &:nth-child(1){
+            width: 84px;
+            height: 75px;
+        }
+        &:nth-child(2){
+            display: none;
+        }
+    }
+}
+.infoCont{
+    padding: 7px 0 10px;
+    margin-left: 16px;
+    >h5{
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #000000;
+    }
+    >p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        font-style: italic;
+        color: #404040;
+    }
+}
+.prise{
+    text-align: right;
+    padding: 7px 0 10px;
+    >h5{
+        margin-top: 12.67px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #242424;
+    }
+    >svg{
+        width: 24px;
+        height: 21.33px;
+    }
+}

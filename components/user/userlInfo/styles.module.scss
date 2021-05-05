@@ -63,6 +63,7 @@
     width: 100%;
     max-width: 235px;
     margin-left: 11px;
+    padding-bottom: 18px;
     >p{
         color: #000000;
         font-size: 16px;
@@ -80,7 +81,6 @@
     }
 }
 .adressEdit{
-    padding-top: 18px;
     button{
         font-family: 'Fira Sans', sans-serif;
         &:nth-child(1){

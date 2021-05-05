@@ -12,7 +12,7 @@ export default function UserInfo(){
                     <input 
                         id='name'
                         type='text' 
-                        placeholder='Джон'
+                        placeholder='Вкажіть своє ім`я'
                     />
                 </div>
                 <div>
@@ -20,7 +20,7 @@ export default function UserInfo(){
                     <input
                         id='surname' 
                         type='text'
-                        placeholder='Сноу'
+                        placeholder='Вкажіть своє прізвище'
                     />
                 </div>
                 <div>
@@ -29,7 +29,7 @@ export default function UserInfo(){
                     <input 
                         id='birthday'
                         type=''
-                        placeholder='07.07.2000'
+                        placeholder='День вашого народження'
                     />
                 </div>
                 <div>
@@ -51,13 +51,13 @@ export default function UserInfo(){
                 <div className={styles.adressCont}>
                     <p>Адреса:</p>
                     <div>
-                        <div className={styles.adressItem}>
+                        {/* <div className={styles.adressItem}>
                             <p>Вул. Дегтярівська, 5б, кв. 7</p>
                             <img src={xmark} alt='del'/>
-                        </div>
+                        </div> */}
                         <div className={styles.adressEdit}>
                             <button>Додати адресу</button>
-                            <button>Редагувати</button>
+                            {/* <button>Редагувати</button> */}
                         </div>
                     </div>
                 </div>
