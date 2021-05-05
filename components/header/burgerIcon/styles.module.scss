@@ -1,4 +1,4 @@
-.menuCont, .menuContX{
+.menuCont, .menuContX, .menuContBig{
     &:hover{
         cursor: pointer;
     }
@@ -8,7 +8,10 @@
 .menuCont div,
 .menuContX:before,
 .menuContX:after,
-.menuContX div {
+.menuContX div,
+.menuContBig:before,
+.menuContBig:after,
+.menuContBig .burgerPart{
   background: #4D4D4D;
   content: " ";
   display: block;
@@ -27,8 +30,74 @@
 .menuContX div {
   transform: scale(0);
 }
-@media screen and ( min-width: 1200px){
-    .menuContX{
+.menuContBig{
+  display: none;
+}
+@media screen and ( min-width: 700px){
+    .menuContX, .menuCont{
       display: none;
+    }
+    .menuContBig{
+      display: block;
+      position: relative;
+      &:hover{
+        .absCont{
+          display: block;
+        }
+      }
+    }
+    .absCont{
+      display: none;
+      position: absolute;
+      top: 3px;
+      right: -72px;
+      z-index: 10;
+      padding: 42px 20px 20px;
+    }
+    .decktopMenu{
+      box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.15);
+        button{
+          white-space: nowrap;
+          width: 100%;
+          background-color: #ffffff;
+          font-size: 16px;
+          line-height: 1.2;
+          font-weight: 400;
+          color: #242424;
+          text-align: left;
+          >img{
+            margin-right: 11px;
+          }
+          &:hover{
+              cursor: pointer;
+          }
+          &:nth-of-type(1){
+              border-top-left-radius: 14px;
+              border-top-right-radius: 14px;
+              padding: 16px 20px 12px;
+              >img{
+                width: 14px;
+                height: 14px;
+              }
+          }
+          &:nth-of-type(2){
+            border-top: 1px solid #E5E5E5;
+            border-bottom: 1px solid #E5E5E5;
+            padding: 12px 20px 12px;
+            >img{
+              width: 16px;
+              height: 16px;
+            }
+        }
+          &:nth-of-type(3){
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+            padding: 12px 20px 16px;
+            >img{
+              width: 19px;
+              height: 19px;
+            }
+          }
+        }
     }
 }
