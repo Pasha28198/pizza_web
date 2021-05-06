@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import styles from './styles.module.scss'
 
 import xmark from '../../../assets/userInfo/xmark.svg'
@@ -5,11 +7,23 @@ import Backdrop from '../../backdrop'
 import AdressModal from '../../adressModal'
 
 export default function UserInfo(){
+
+    const [openModal, setOpenModal] = useState(false)
+
+    function modalHandler(e){
+        e.preventDefault()
+        setOpenModal(!openModal)
+    }
+
     return(
         <div className={styles.userInfoCont}>
-            {/* <Backdrop>
-                <AdressModal />
-            </Backdrop> */}
+            {
+                openModal
+                ? <Backdrop>
+                    <AdressModal modalHandler={modalHandler}/>
+                </Backdrop>
+                : null
+            }
             <h4>Основна інформація:</h4>
             <form className={styles.info}>
                 <div>
@@ -61,7 +75,11 @@ export default function UserInfo(){
                             <img src={xmark} alt='del'/>
                         </div>
                         <div className={styles.adressEdit}>
-                            <button>Додати адресу</button>
+                            <button
+                                onClick={(e)=>modalHandler(e)}
+                            >
+                                Додати адресу
+                            </button>
                             <button>Редагувати</button>
                         </div>
                     </div>

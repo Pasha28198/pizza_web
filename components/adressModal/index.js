@@ -2,12 +2,16 @@ import styles from './styles.module.scss'
 
 import xGrey from '../../assets/userInfo/xgrey.svg'
 
-export default function AdressModal(){
+export default function AdressModal({modalHandler}){
     return(
             <div className={styles.modal}>
                 <h4>Нова адреса</h4>
                 <form className={styles.form}>
-                    <img src={xGrey} alt='X'/>
+                    <img 
+                        onClick={(e)=>modalHandler(e)}
+                        src={xGrey} 
+                        alt='X'
+                    />
                     <div>
                         <label htmlFor='city'>Місто:*</label>
                         <select required id='city'>

@@ -24,7 +24,7 @@
         top: 20px;
         right: 20px;
         z-index: 70;
-        :hover{
+        &:hover{
             cursor: pointer;
         }
     }
@@ -99,6 +99,7 @@ form .privat{
         width: 477px;
         height: 475px;
         padding: 46px 81px 46px 72px;
+        left: calc(50% - 237px); 
     }
     .form{
         >img{
