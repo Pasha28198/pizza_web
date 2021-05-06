@@ -1,8 +1,5 @@
 .pizzaType{
-    padding: 0 20px 0px;
-    &:nth-last-child(-n+1){
-        padding: 0 20px 40px;
-    }
+    padding: 0 20px 40px;
     >h2{
         color:  #0B0B0B;
         font-size: 36px;
@@ -19,6 +16,7 @@
 }
 @media screen and ( min-width: 755px){
     .pizzaType{
+        padding: 0 20px 50px;
         >h2{
             font-size: 48px;
             margin: 80px 0 40px;
