@@ -5,12 +5,13 @@ body {
   font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+.overflow{
+  overflow: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -40,33 +41,6 @@ button{
   .container{
     width: 100%;
     max-width: 1440px;
-  }
-}
-.userInfoCont{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 15px 20px 15px;
-}
-.userTitle{
-  font-size: 32px;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #0B0B0B;
-  text-align: center;
-  margin: 30px auto 20px;
-}
-@media screen and ( min-width: 621px){
-  .userTitle{
-    font-size: 48px;
-    margin: 60px auto 40px;
-  }
-}
-@media screen and ( min-width: 1440px){
-  .userInfoCont{
-    padding: 0 154px 217px 154px;
-    justify-content: space-between;
-    flex-wrap: nowrap;
   }
 }
 

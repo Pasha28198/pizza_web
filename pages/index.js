@@ -1,13 +1,11 @@
 import SliderComponent from "../components/slider/index"
-import MainContent from "../components/MainContent"
-import MobileMenu from "../components/mobileMenu"
+import Pizzas from "../components/pizzas"
 
 export default function Index(){
   return(
     <>
-        <MobileMenu />
         <SliderComponent />
-        <MainContent />
+        <Pizzas />
     </>
   )
 }

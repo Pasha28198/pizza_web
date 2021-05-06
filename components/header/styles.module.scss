@@ -7,21 +7,26 @@
     }
 }
 .logoCont{
+    margin-right: 32px;
     >img{
         width: 51px;
         height: 36px; 
     }
 }
+.categoriesMin{
+    justify-content: space-around;
+}
 .categoriesMax{
     display: none;
 }
-.userIcon{
-    display: none;
-}
-@media screen and ( min-width: 621px) {
+
+@media screen and ( min-width: 731px) {
     .categoriesMin{
         display: none;
     }   
+    .logoCont{
+        margin-right: 5px;
+    }
     .categoriesMax{
         display: flex;
         justify-content: flex-start;
@@ -30,14 +35,6 @@
 @media screen and ( min-width: 1200px){
     .headerCont{
         padding: 19px 155.67px 19px 154px;
-    }
-    .userIcon{
-        display: block;
-        margin-left: 21.64px;
-        img{
-            width: 20px;
-            height: 20px;
-        }
     }
 }
 @media screen and ( min-width: 1440px){

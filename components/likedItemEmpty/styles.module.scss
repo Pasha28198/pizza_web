@@ -1,0 +1,33 @@
+.cont{
+    margin-top: 62px;
+    >img{
+        width: 88.34px;
+        height: 94px;
+        margin-bottom: 20px;
+    }
+    >p{
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        color:#404040;
+        margin: 0 auto 20px;
+        max-width: 160px;
+    }
+    >a{
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        color:#E92424;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #E92424;
+        &:hover{
+            cursor: pointer;
+            border-bottom: none;
+        }
+    }
+}
+@media screen and (min-width: 1300px) {
+    .cont{
+        margin-top: 126px;
+    }
+}

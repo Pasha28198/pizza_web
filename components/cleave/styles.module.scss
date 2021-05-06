@@ -1,0 +1,55 @@
+.absolCont{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: -17px;
+    z-index: 15;
+    padding-top: 40px;
+}
+.cleaveCont{
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.15);
+    padding: 22px 15px 25px 34px;
+}
+.cliveInfo{
+    border-top: 1px solid #E4E4E4;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    >div{
+        margin-right: 32px;
+        p{
+        &:nth-child(1){
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1.2;
+              color: #404040;
+              white-space: nowrap;
+
+          }  
+          &:nth-child(2){
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #242424;
+          }  
+        }
+    }
+    >button{
+        width: 39px;
+        height: 39px;
+        background-color: #E92424;
+        border-radius: 13px;
+        padding: 14px 15.7px 13px 16.7px;
+        transition: background-color 0.3s linear;
+        >img{
+            width: 6.61px;
+            height: 12px;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: #CC1111;
+        }
+    }
+}

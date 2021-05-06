@@ -1,0 +1,35 @@
+.userInfoCont{
+  text-align: center;
+  padding: 40px 8px 40px 7px;
+}
+.userTitle{
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #0B0B0B;
+  margin-bottom: 12px;
+}
+.serInfoCont{
+  max-width: 360px;
+  margin: 0 auto;
+}
+@media screen and ( min-width: 1221px){
+  .userTitle{
+    font-size: 48px;
+    margin: 0px auto 45px;
+  }
+  .serInfoCont{
+    max-width: none;
+    margin: auto;
+    display: flex;
+  }
+  .userInfoCont{
+    padding: 60px 189px 82px 157px;
+  }
+}
+@media screen and ( min-width: 1440px){
+  .userInfoCont{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}

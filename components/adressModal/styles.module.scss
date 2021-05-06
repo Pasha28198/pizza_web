@@ -1,0 +1,110 @@
+.modal{
+    position: fixed;
+    top: 65px;
+    left: calc(50% - 180px); 
+    width: 360px;
+    height: 475px;
+    z-index: 65;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 46px 20px 40px;
+    >h4{
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #0B0B0B;
+        margin-bottom: 20px;
+    }
+}
+.form{
+    >img{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 70;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    div{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    label{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #656565;
+    }
+    input, select{
+        font-family: 'Fira Sans', sans-serif;
+        border: 1px solid #D9D9D9;
+        border-radius: 7px;
+        padding: 9px 11px 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #000000;
+        width: 227px;
+        height: 39px;
+    }
+}
+form .privatCheck{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 45px;
+    >input{
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    } 
+}
+.formBtn{
+    margin: 16px auto 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 12px 39px; 
+    background-color: #E92424;
+    border-radius: 36px;
+    transition: background-color .3s linear;
+    &:hover{
+        cursor: pointer;
+        background-color: #CC1111;
+    }
+}
+.formBtnInactive{
+    background-color: #FF7272;
+}
+form .privat{
+    display: grid;
+    grid-template-columns: 152px 152px;
+    column-gap: 16px;
+    input{
+        width: 59px;
+    }
+    >div{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+}
+@media screen and (min-width: 800px){
+    .modal{
+        width: 477px;
+        height: 475px;
+        padding: 46px 81px 46px 72px;
+        left: calc(50% - 237px); 
+    }
+    .form{
+        >img{
+            top: 18px;
+            right: 22px;
+        }
+    }
+}

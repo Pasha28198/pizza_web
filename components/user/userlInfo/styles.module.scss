@@ -1,6 +1,5 @@
 .userInfoCont{
     margin-bottom: 20px;
-    position: relative;
     >h4{
         font-weight: 400;
         font-size: 20px;
@@ -17,46 +16,108 @@
     }
 }
 .info{
+    text-align: left;
     border: 1px solid #E0E0E0;
     border-radius: 16px;
     background: #FFFFFF;
-    padding: 10px 40px 22px 10px;
+    padding: 40px 18px 40px 22px;
     display: flex;
     flex-direction: column;
     >div{
         display: flex;
-        margin-bottom: 20px;
-        &:nth-last-child(-n+1){
-            margin-bottom: 0;
-        }
-        >p{
-            display: inline-block;
-            &:nth-child(1){
-                color: #656565;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 1.2;
-                width: 90px;
-                margin-right: 42px;
+        align-items: center;
+        margin-bottom: 10px;
+        >label, >p{
+            color: #656565;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            min-width: 81px;
+            margin-right: 4px;
             }
-            &:nth-child(2){
-                color: #000000;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 1.2;
-                max-width: 156px;
-            }
+        >input{
+            color: #000000;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.1;
+            width: 100%;
+            max-width: 235px;
+            padding: 10px 11px 11px;
+            border-radius: 7px;
+            border: 1px solid #D9D9D9;
         }
     }
 }
-@media  screen and (min-width: 720px) {
-    .userInfoCont{
-        margin-right: 20px;
+.bithBig{
+    display: none;
+}
+.adressCont{
+    align-items: flex-start!important;
+    margin-bottom: 0;
+}
+.adressItem{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 235px;
+    margin-left: 11px;
+    padding-bottom: 18px;
+    >p{
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+    >img{
+        width: 12px;
+        height: 12px; 
+        margin-left: 10px;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
-@media screen and(min-width: 1180px){
+.adressEdit{
+    button{
+        font-family: 'Fira Sans', sans-serif;
+        &:nth-child(1){
+            font-size: 16px;
+            border-bottom: 1px solid #E92424;
+            line-height: 1.1;
+            color: #E92424;
+        }
+        &:nth-child(2){
+            font-size: 16px;
+            border-bottom: 1px solid #4D4D4D;
+            line-height: 1.1;
+            color: #4D4D4D;
+            margin-left: 38px;
+        }
+        &:hover{
+            border-bottom: none;
+            cursor: pointer;
+        }
+    }
+}
+.btnSubmit{
+    margin: 16px auto 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 12px 39px; 
+    background-color: #E92424;
+    border-radius: 36px;
+    transition: background-color .3s linear;
+    &:hover{
+        cursor: pointer;
+        background-color: #CC1111;
+    }
+}
+@media screen and(min-width: 1221px){
     .userInfoCont{
         >h4{
+            text-align: left;
             font-weight: 400;
             font-size: 24px;
             line-height: 1.2;
@@ -69,36 +130,34 @@
         }
     }
     .info{
+        max-width: 468px;
+        height: 445px;
         border: 1px solid #E0E0E0;
         border-radius: 16px;
         background: #FFFFFF;
-        padding: 50px 115px 42px 50px;
-        display: flex;
-        flex-direction: column;
+        padding: 40px 40px 40px 32px;
+        margin-right: 20px;
         >div{
-            display: flex;
-            margin-bottom: 30px;
-            &:nth-last-child(-n+1){
-                margin-bottom: 0;
-            }
-            >p{
-                display: inline-block;
-                &:nth-child(1){
-                    color: #656565;
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 1.2;
-                    width: 111px;
-                    margin-right: 42px;
-                }
-                &:nth-child(2){
-                    color: #000000;
-                    font-size: 24px;
-                    font-weight: 400;
-                    line-height: 1.2;
-                    max-width: 236px;
-                }
+            >label, >p{
+                width: 105px;
+                margin-right: 10px;
             }
         }
+    }
+    .bithMob{
+        display: none;
+    }
+    .bithBig{
+        display: inline-block;
+    }
+    .adressItem{
+        >img{
+            margin-left: 34px;
+        }
+    }
+}
+@media screen and ( min-width: 1440px){
+    .info{
+        padding: 40px 62px 40px 43px;
     }
 }

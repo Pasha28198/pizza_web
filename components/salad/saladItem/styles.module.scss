@@ -1,0 +1,146 @@
+.saladCont{
+    width: 335px;
+    margin-bottom: 20px;
+    &:nth-last-child(-n+1){
+        margin-bottom: 0;
+    }
+}
+.imgCont{
+    width: 335px;
+    height: 270px;
+    >img{
+        &:nth-child(1){
+            width: 335px;
+            height: 270px;
+        }
+        &:nth-child(2){
+            display: none;
+        }
+    }
+}
+.saladInfo{
+    padding: 12px 24px 20px;
+    border-bottom: 1px solid #E5E5E5; 
+    border-left: 1px solid #E5E5E5; 
+    border-right: 1px solid #E5E5E5;
+    border-bottom-left-radius: 14px; 
+    border-bottom-right-radius: 16px; 
+    >p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #404040;
+        margin-bottom: 16px;
+    }
+}
+.infoSup{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    >div{
+        &:nth-child(1){
+            >h4{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.2;
+                color: #000000;
+            }
+            >p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.2;
+                font-style: italic;
+                color: #404040;
+            }
+        }
+    }
+}
+.svgCont{
+    >svg{
+        width: 24px;
+        height: 21.33px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.infoSub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >h4{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #242424;
+    }
+    >button{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #FFFFFF;
+        background: #E92424;
+        border-radius: 14px;
+        padding: 13px 32.5px 12.42px;
+        transition: background 0.3s linear;
+        &:hover{
+            cursor: pointer;
+            background: #CC1111;
+        }
+    }
+}
+@media screen and ( min-width: 700px){
+    .saladCont{
+        width: 336px;
+        margin-bottom: 14px;
+        margin-right: 14px;
+        &:nth-last-child(-n+1){
+            margin-bottom: 14px;
+        }
+    }
+    .imgCont{
+        width: 336px;
+        height: 304px;
+        >img{
+            &:nth-child(1){
+                display: none;
+            }
+            &:nth-child(2){
+                display: block;
+                width: 336px;
+                height: 304px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .saladInfo{
+        padding: 41px 24px 44px;
+    }
+    .infoSub{
+        >button{
+            display: none;
+        }
+    }
+    .saladCont{
+        position: relative;
+        background-color: #FFFFFF;
+        &:hover{
+            .saladInfo{
+                position: absolute;
+                top: 304px;
+                left: 0;
+                z-index: 15px;
+                padding: 41px 24px 20px;
+                >p{
+                    margin-bottom: 10px;
+                }
+            }
+            .infoSub{
+                >button{
+                    display: block;
+                }   
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.pizzaType{
+    padding: 0 20px 40px;
+    >h2{
+        color:  #0B0B0B;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin: 40px 0 20px;
+        text-align: center;
+    }
+    >div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and ( min-width: 755px){
+    .pizzaType{
+        padding: 0 20px 50px;
+        >h2{
+            font-size: 48px;
+            margin: 80px 0 40px;
+        }
+        >div{
+            justify-content: flex-start;
+        }
+        
+    }
+}
