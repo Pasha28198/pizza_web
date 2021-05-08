@@ -5,8 +5,8 @@
     color: #FFFFFF;
 }
 .logo{
-    width: 124px;
-    height: 56px;
+    width: 98px;
+    height: 71.11px;
     margin: 0 auto 20px;
     >img{
         width: 100%;
@@ -91,6 +91,10 @@
     display: none;
 }
 @media screen and ( min-width: 621px){
+    .logo{
+        width: 85.39px;
+        height: 61.96px;
+    }
     .footerCont{
         padding: 0;
     }

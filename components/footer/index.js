@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './styles.module.scss'
 
-import logo from '../../assets/footerIcon/LOGO.svg'
+import logo from '../../assets/logo/logoBlack.svg'
 import tel from '../../assets/footerIcon/telephone.svg'
 import mail from '../../assets/footerIcon/mail.svg'
 import gps from '../../assets/footerIcon/gps.svg'
@@ -14,9 +14,11 @@ export default function Footer(){
             <div className='container'>
                 <div className={styles.footerContInner}>
                     <div className={styles.info}>
-                        <div className={styles.logo}>
-                            <img src={logo} alt='logo'/>
-                        </div>
+                        <Link href='/'>
+                            <div className={styles.logo}>
+                                <img src={logo} alt='logo'/>
+                            </div>
+                        </Link>
                         <Link href='#'>
                             <a>Про нас</a>
                         </Link>

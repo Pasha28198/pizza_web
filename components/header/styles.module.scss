@@ -7,11 +7,9 @@
     }
 }
 .logoCont{
-    margin-right: 32px;
-    >img{
-        width: 51px;
-        height: 36px; 
-    }
+    margin-right: 23px;
+    width: 56px;
+    height: 38.64px; 
 }
 .categoriesMin{
     justify-content: space-around;
@@ -33,6 +31,10 @@
     }
 }
 @media screen and ( min-width: 1200px){
+    .logoCont{
+        min-width: 68px;
+        min-height: 46.92px; 
+    }
     .headerCont{
         padding: 19px 155.67px 19px 154px;
     }
