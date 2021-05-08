@@ -48,6 +48,12 @@
         }
     }
 }
+.errMes{
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #E92424;
+}
 .bithBig{
     display: none;
 }
@@ -131,7 +137,7 @@
     }
     .info{
         max-width: 468px;
-        height: 445px;
+        min-height: 445px;
         border: 1px solid #E0E0E0;
         border-radius: 16px;
         background: #FFFFFF;

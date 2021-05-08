@@ -53,6 +53,12 @@
         height: 39px;
     }
 }
+form .errMes{
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #E92424;
+}
 form .privatCheck{
     display: flex;
     align-items: center;
@@ -64,6 +70,7 @@ form .privatCheck{
         margin-right: 10px;
     } 
 }
+
 .formBtn{
     margin: 16px auto 0;
     color: #ffffff;
