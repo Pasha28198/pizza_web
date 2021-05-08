@@ -20,5 +20,6 @@
     "sass": "^1.32.11",
     "slick-carousel": "^1.8.1",
     "yup": "^0.32.9"
-  }
+  },
+  "cacheDirectories": [".next/cache"]
 }
