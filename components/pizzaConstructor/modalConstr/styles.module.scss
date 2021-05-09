@@ -1,0 +1,133 @@
+.modalCont{
+    position: absolute;
+    width: 347px;
+    height: 601px;
+    z-index: 60;
+    top: 100px;
+    left: calc(50% - 173.5px);
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 12px 0px 12px 22px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    >h4{
+       font-weight: 500;
+       font-size: 24px;
+       color: #000000;
+       line-height: 1.2; 
+    }
+    >img{
+        width: 16px;
+        height: 16px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.content{
+    height: 498px;
+    overflow: auto;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    >div{
+        >h6{
+            font-weight: 400;
+            font-size: 16px;
+            color: #0B0B0B;
+            line-height: 1.2;
+        }
+        &:nth-child(1){
+            margin-bottom: 3px;
+        }
+        &:nth-child(2){
+            margin-bottom: 6px;
+        } 
+    }
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #E5E5E5;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #FFB800;
+        border-radius: 27px;
+    }
+}
+.itemsCont, .itemsContAdd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 14px;
+    padding-top: 13px;
+}
+.itemsContAdd{
+    background: #FAFAFA;
+    border-radius: 9px;
+}
+.modalFooter{
+    padding-right: 31px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    >h5{
+        font-weight: 600;
+        font-size: 20px;
+        color:#242424;
+        line-height: 1.2;
+    }
+    >button{
+        margin-left: 20px;
+        border-radius: 14px;
+        background: #E92424;
+        font-weight: 400;
+        font-size: 16px;
+        color:#FFFFFF;
+        line-height: 1.2;
+        padding: 13px 16.84px;
+        text-align: center;
+        width: 174px;
+        transition: background .3s linear;
+        &:hover{
+            cursor: pointer;
+            background: #CC1111;;
+        }
+    }
+}
+@media screen and (min-width: 900px) {
+    .modalCont{
+        top: 70px;
+        width: 874px;
+        height: 736px;
+        left: calc(50% - 437px);
+        padding: 20px 20px 20px 38px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0px;
+        >h4{
+            margin-bottom: 8px;
+        }
+    }
+    .itemsCont, .itemsContAdd{
+        padding: 16px 18px 0 0;
+        margin-bottom: 20px;
+        justify-content: flex-start;
+        >div{
+            margin-right: 9px;
+            &:nth-child(4n){
+                margin-right: 0;
+            }
+        }
+    }
+    .content{
+        height: auto;
+        overflow: visible;
+    }
+}

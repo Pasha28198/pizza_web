@@ -30,8 +30,23 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: flex-start;
-            align-items: flex-start;
+            max-width: 740px;
+            margin: 0 auto;
         }
         
+    }
+}
+@media screen and ( min-width: 1200px){
+    .listCont{
+        >div{
+            max-width: 1090px;
+        }
+    }
+}
+@media screen and ( min-width: 1439px){
+    .listCont{
+        >div{
+            max-width: none;
+        }
     }
 }
