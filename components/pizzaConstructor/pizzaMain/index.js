@@ -1,5 +1,8 @@
 import { useState } from 'react'
 
+import Backdrop from '../../backdrop'
+import ModalConst from '../modalConstr'
+
 import HeartSvg from '../../svgImg/heartSvg'
 import HeartYelSvg from '../../svgImg/heartYelSvg'
 
@@ -9,13 +12,27 @@ import pizzaMob from '../../../assets/pizzaConstImg/pizzaMob.png'
 import pizzaBig from '../../../assets/pizzaConstImg/pizzaBig.png'
 import fast from '../../../assets/pizzaConstImg/fast.svg'
 
+
 export default function PizzaMain(){
 
     const [isLike, setIsLike] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+
+    const modalHandler = (e) =>{
+        e.preventDefault()
+        setIsOpen(!isOpen)
+    }
 
     return(
         <div className='container'>
             <div className={styles.mainCont}>
+                {
+                    isOpen
+                    ? <Backdrop>
+                        <ModalConst modalHandler={modalHandler} />
+                    </Backdrop>
+                    : null
+                }
                 <div className={styles.imgCont}>
                     <img src={pizzaMob} alt='pizza'/>
                     <img src={pizzaBig} alt='pizza'/>
@@ -46,7 +63,10 @@ export default function PizzaMain(){
                             } 
                         </div>
                     </div>
-                    <div className={styles.ingrid}>
+                    <div
+                        onClick={(e)=>modalHandler(e)}
+                        className={styles.ingrid}
+                    >
                         Змінити інгрідієнти
                     </div>
                     <div className={styles.deliv}>
