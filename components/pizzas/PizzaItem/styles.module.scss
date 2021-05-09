@@ -3,6 +3,9 @@
     flex-direction: column;
     margin-bottom: 16px;
     width: 335px;
+    &:hover{
+        cursor: pointer;
+    }
     &:nth-last-child(-n+1){
         margin-bottom: 0;
     }
