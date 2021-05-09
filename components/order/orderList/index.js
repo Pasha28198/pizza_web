@@ -14,7 +14,7 @@ export default function OrderList(){
                 </div>
             </div>
             <div className={styles.total}>
-                        Всього: <p>660 грн</p>
+                Всього: <p>660 грн</p>
             </div>
         </div>
     )

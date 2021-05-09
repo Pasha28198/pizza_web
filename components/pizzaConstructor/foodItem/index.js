@@ -6,6 +6,7 @@ import chicken from '../../../assets/constModal/chicken.png'
 import deleteImg from '../../../assets/constModal/deleteRed.svg'
 import plusImg from '../../../assets/constModal/plus.svg'
 import minusImg from '../../../assets/constModal/minus.svg'
+import good from '../../../assets/constModal/good.svg'
 
 export default function FoodItem(){
 
@@ -21,7 +22,7 @@ export default function FoodItem(){
         <div className={styles.itemCont}>
             <div className={styles.backdrop}></div>
             <div className={styles.complete}>
-                <img src='' alt=''/>
+                <img src={good} alt=''/>
             </div>
             <img src={chicken} alt=''/>
             <div className={styles.desc}>

@@ -1,3 +1,16 @@
 .cont{
-    padding: 0 20px 32px;
+    padding: 0 0 40px;
+}
+@media screen and (min-width: 1200px){
+    .cont{
+        padding: 40px 100px 80px 157px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1300px){
+    .cont{
+        padding: 40px 189px 80px 157px;
+    }
 }

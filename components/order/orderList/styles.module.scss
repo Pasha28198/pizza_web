@@ -1,4 +1,5 @@
 .cont{
+    margin: 0 20px;
     >h3{
        margin: 40px auto 20px;
        font-size: 24px;
@@ -9,7 +10,6 @@
     }
     max-width: 373px;
 }
-
 .listContInner{
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
@@ -19,7 +19,6 @@
     border-bottom-right-radius: 0;
 }
 .total{
-    
     padding: 10px 9px;
     display: flex;
     align-items: center;
@@ -37,15 +36,19 @@
         font-weight: 600;
     }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 376px){
     .cont{
-        width: 373;
+        width: 373px;
+        margin: 0 auto;
     }
+}
+@media screen and (min-width: 600px){
     .total{
-        width: 363px;
+        width: 359px;
     }
     .listCont{
         height: 420px;
+        width: 369px;
         overflow-y: scroll;
         padding-right: 4px;
         &::-webkit-scrollbar {
@@ -60,8 +63,9 @@
             border-radius: 27px;
         }
     }
-    // .listContInner{
-    //     height: 420px;
-        
-    // }
+}
+@media screen and (min-width: 1200px){
+    .cont{
+        margin: 0;
+    }
 }
