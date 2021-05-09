@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import CleaveItem from './cleaveItem'
 
 import styles from './styles.module.scss'
@@ -17,9 +18,11 @@ export default function Cleave(){
                         <p>Сума замовлення:</p>
                         <p>260 грн</p>
                     </div>
-                    <button>
-                        <img src={arrowR} alt=''/>
-                    </button>
+                    <Link href='/order'>
+                        <button>
+                            <img src={arrowR} alt=''/>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
