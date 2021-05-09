@@ -23,7 +23,23 @@
         }
         >div{
             justify-content: flex-start;
+            max-width: 698px;
+            margin: 0 auto;
         }
         
+    }
+}
+@media screen and ( min-width: 1200px){
+    .pizzaType{
+        >div{
+            max-width: 1047px;
+        }
+    }
+}
+@media screen and ( min-width: 1439px){
+    .pizzaType{
+        >div{
+            max-width: none;
+        }
     }
 }
