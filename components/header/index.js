@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import UserIcon from './userIcon'
 import Categories from './categories'
 import Basket from './basket'
@@ -6,7 +8,7 @@ import BurgerIcon from './burgerIcon'
 
 import styles from './styles.module.scss'
 
-import logo from '../../assets/logo/LOGO.svg'
+import logo from '../../assets/logo/logoWhite.svg'
 
 
 export default function Header(){
@@ -14,9 +16,9 @@ export default function Header(){
         <div className='container'>
             <div className={styles.headerCont}>
                 <div className={styles.headerUpper}>
-                    <div className={styles.logoCont}>
-                        <img src={logo} alt=''/>
-                    </div>
+                    <Link href='/'>
+                        <img className={styles.logoCont} src={logo} alt=''/>
+                    </Link>
                     <div className={styles.categoriesMax}>
                     <Categories />
                     </div>

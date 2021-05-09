@@ -1,0 +1,39 @@
+.slideCont{
+    width: 55px;
+    text-align: center;
+    &:hover{
+        cursor: pointer;
+    }
+    >img{
+        margin-bottom: 8px;
+        &:nth-child(1){
+            width: 55px;
+            height: 50px;
+        }
+        &:nth-child(2){
+            width: 89px;
+            height: 80px;
+            display: none;
+        }
+    }
+    >p{
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        color:#404040;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .slideCont{
+        width: 89px;
+        >img{
+            margin-bottom: 4px;
+            &:nth-child(1){
+               display: none;
+            }
+            &:nth-child(2){
+               display: block;
+            }
+        }
+    }
+}
