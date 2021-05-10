@@ -40,12 +40,6 @@ export default function BurgerIcon(){
                         </Link>
                         <Link href='#'>
                             <button>
-                                <img src={megaphone} alt=''/>
-                                Новини
-                            </button>
-                        </Link>
-                        <Link href='#'>
-                            <button>
                                 <img src={fast} alt=''/>
                                 Доставка і оплата
                             </button>
