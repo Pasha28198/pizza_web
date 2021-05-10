@@ -1,5 +1,9 @@
 import { useState } from 'react'
+
 import place from '../../../assets/orderImg/place.svg'
+import Select from '../../customSelect/selsect'
+
+import { optDay, optTime, optPay, optAdress } from '../../../helpers/selectOprions'
 
 import styles from './styles.module.scss'
 
@@ -38,24 +42,8 @@ export default function Ordering(){
                     </div>
                     <h4>Час доставки</h4>
                     <div className={styles.selectInput}>
-                        <select className={styles.selectDay}>
-                            <option>Сьогодні</option>
-                            <option>Вт - 11.05</option>
-                            <option>Ср - 12.05</option>
-                            <option>Чт - 13.05</option>
-                            <option>Пт - 14.05</option>
-                            <option>Сб - 15.05</option>
-                        </select>
-                        <select className={styles.selectTime}>
-                            <option>Якомога скоріше</option>
-                            <option>19:00</option>
-                            <option>19:30</option>
-                            <option>19.45</option>
-                            <option>19.45</option>
-                            <option>19.45</option>
-                            <option>19.45</option>
-                            <option>19.45</option>
-                        </select>
+                        <Select options={optDay} />
+                        <Select options={optTime} />
                     </div>
                     <h4>Адреса {isDelivery ? 'доставки' : 'ресторану'}</h4>
                     <div className={styles.adressMain}>
@@ -72,9 +60,7 @@ export default function Ordering(){
                                             id='streetOffer'
                                             placeholder='Вулиця'
                                         />
-                                    : <select className={styles.selectRest}>
-                                        <option>вул. Здолбунівська 4б</option>
-                                    </select>
+                                    : <Select options={optAdress} />
                                 }
                            
                         </div>
@@ -114,11 +100,7 @@ export default function Ordering(){
                     </div>
                     <h4>Оплата</h4>
                     <div className={styles.pay}>
-                        <select className={styles.selectPay}>
-                            <option>Картою онлайн</option>
-                            <option>Готівкою кур’єру</option>
-                            <option>Картою кур’єру</option>
-                        </select>
+                        <Select options={optPay}/>
                         <input 
                             type='text' 
                             name='change'
