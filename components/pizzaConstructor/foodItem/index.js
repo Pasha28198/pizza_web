@@ -7,6 +7,7 @@ import deleteImg from '../../../assets/constModal/deleteRed.svg'
 import plusImg from '../../../assets/constModal/plus.svg'
 import minusImg from '../../../assets/constModal/minus.svg'
 import good from '../../../assets/constModal/good.svg'
+import PlusSvg from '../../svgImg/plus'
 
 export default function FoodItem(){
 
@@ -38,17 +39,17 @@ export default function FoodItem(){
             }
            {
                counter
-               ?  <div className={styles.changeCount}>
-               <div className={styles.changeInner}>
-                   <div onClick={()=>minus()}><img src={minusImg} alt=''/></div>
-                   <p>{counter}</p>        
-                   <div onClick={()=>plus()}><img src={plusImg} alt=''/></div>
-               </div>
-           </div>
+               ? <div className={styles.changeCount}>
+                    <div className={styles.changeInner}>
+                        <div onClick={()=>minus()}><img src={minusImg} alt=''/></div>
+                        <p>{counter}</p>        
+                        <div onClick={()=>plus()}><PlusSvg /></div>
+                    </div>
+                </div>
            : <div 
                 className={styles.plusOnly}
                 onClick={()=>plus()}>
-                    <img src={plusImg} alt=''/>
+                    <PlusSvg />
             </div>
            }
            

@@ -88,7 +88,7 @@
         &:nth-of-type(2){
             right: -15.5px;
             top: 0;
-            >img{
+            >svg{
                 width: 11px;
                 height: 11px;
                 margin-top: calc(50% - 6px); 
@@ -115,8 +115,14 @@
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
     &:hover{
         cursor: pointer;
+        >svg{
+            >path{
+                fill: #E92424;
+            }
+            
+        }
     }
-    >img{
+    >svg{
         width: 11px;
         height: 11px;
         margin-top: calc(50% - 6px); 
