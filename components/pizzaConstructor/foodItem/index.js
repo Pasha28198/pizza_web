@@ -27,7 +27,7 @@ export default function FoodItem(){
             <img src={chicken} alt=''/>
             <div className={styles.desc}>
                 <h6>Курка</h6>
-                <p>50гр</p>
+                <p>50гр/40 грн</p>
             </div>
             {
                 counter

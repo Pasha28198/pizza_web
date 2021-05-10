@@ -73,6 +73,7 @@
         background: #ffffff;
         border-radius: 50%;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+        user-select: none;
         &:hover{
             cursor: pointer;
         }
@@ -112,6 +113,9 @@
     background: #ffffff;
     border-radius: 50%;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    &:hover{
+        cursor: pointer;
+    }
     >img{
         width: 11px;
         height: 11px;
@@ -126,14 +130,14 @@
     z-index: 20;
     border-radius: 50%;
     background: #ffffff;
-    top: -20px;
+    top: -12px;
     right: -5px;
     text-align: center;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
     >img{
         width: 14px;
         height: 14px;
-        margin-top: calc(50% - 7px);  
+        margin-top: calc(50% - 8px);  
     }
 }
 @media screen and (min-width: 900px) {
