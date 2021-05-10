@@ -72,6 +72,11 @@
     >input, >select{
         width: 160px;
     }
+    >div{
+        &:nth-of-type(1){
+            margin-right: 15px;
+        }
+    }
 }
 .adressPrim{
     margin-bottom: 8px;
@@ -95,6 +100,9 @@
     >input{
         width: 100%;
     }
+}
+.asressCity{
+    margin-bottom: 14px;
 }
 .formInner .adressSecond{
     display: flex;
@@ -125,7 +133,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    >select{
+    >div{
         width: 179px;
     }
     >input{
@@ -185,6 +193,9 @@
         resize: none;
         width: 247px;
         height: 65px;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.1;
     }
 }
 .total{

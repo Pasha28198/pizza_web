@@ -2,16 +2,16 @@
     position: relative;
     border: 1px solid #D9D9D9;
     border-radius: 7px;
-    padding: 10px 10px 11px 11px;
+    padding: 8px 10px 8px 11px;
     font-size: 16px;
     line-height: 1.2;
     color:#242424;
     font-weight: 400;
-    width: 179px;
+    width: 160px;
     user-select: none;
     >img{
         position: absolute;
-        top: 15px;
+        top: 12px;
         right: 11px;
         width: 12px;
         height: 12px;
@@ -20,10 +20,6 @@
         cursor: pointer;
     }
 }
-.choosen{
-
-}
-
 .selectInner{
     display: block;
     position: absolute;
@@ -31,7 +27,6 @@
     left: 0px;
     z-index: 20;
     background: #ffffff;
-    min-width: 179px;
     width: 100%;
     max-height: 164px;
     overflow-y: scroll;
@@ -56,5 +51,10 @@
     &:hover{
         background-color: #E92424;
         color: #fff;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .customSelect{
+        width: 179px;
     }
 }

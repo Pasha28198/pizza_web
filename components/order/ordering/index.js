@@ -48,7 +48,7 @@ export default function Ordering(){
                     <h4>Адреса {isDelivery ? 'доставки' : 'ресторану'}</h4>
                     <div className={styles.adressMain}>
                         <div className={styles.adressPrim}>
-                            <div>
+                            <div className={styles.asressCity}>
                                 <img src={place} alt=''/>
                                 <p>м. Івано-Франківськ</p>
                             </div>
