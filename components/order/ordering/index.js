@@ -104,7 +104,7 @@ export default function Ordering(){
                             }
                         </div>
                     </div>
-                    <div className={styles.privat}>
+                    <div className={isDelivery ? styles.privat : `${styles.privat, styles.hidden}`}>
                         <input
                             onClick={()=>setIsPrivat(!isPrivat)}
                             name='privat'

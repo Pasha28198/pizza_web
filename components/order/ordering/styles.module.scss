@@ -12,6 +12,7 @@
     display: none;
 }
 .btnCont{
+    display: flex;
     background: #E5E5E5;
     border-radius: 30px;
     margin-bottom: 16px;
@@ -31,7 +32,7 @@
             width: 175px;
         }
         &:nth-of-type(2){
-            width: 168px;
+            width: 158px;
         }
     }
 }
@@ -208,6 +209,7 @@
         margin-top: 6px;
         background: #E92424;
         border-radius: 36px;
+        font-size: 16px;
         color: #ffffff;
         transition: background .3s linear;
         &:hover{
@@ -235,6 +237,13 @@
         max-width: 344px;
         margin: 0 auto;
     }
+    .btnCont{
+        >button{
+            &:nth-child(2){
+                width: 168px;
+            }
+        }
+    }
 }
 @media screen and (min-width: 1200px){
     .contMain{
@@ -256,6 +265,11 @@
     }
     .btnCont{
         width: 344px;
+        >button{
+            &:nth-child(2){
+                width: 168px;
+            }
+        }
     }
     .persInput, .selectInput{
         justify-content: flex-start;
