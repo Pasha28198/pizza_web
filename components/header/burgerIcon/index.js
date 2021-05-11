@@ -38,7 +38,7 @@ export default function BurgerIcon(){
                                 Акції
                             </button>
                         </Link>
-                        <Link href='#'>
+                        <Link href='/delivery'>
                             <button>
                                 <img src={fast} alt=''/>
                                 Доставка і оплата
