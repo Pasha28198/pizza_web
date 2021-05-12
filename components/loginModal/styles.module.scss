@@ -1,0 +1,156 @@
+.modalCont{
+    position: absolute;
+    top: 149px;
+    left: calc(50% - 173px);
+    width: 345px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    
+    z-index: 100;
+}
+.contInner{
+    position: relative;
+    padding: 38.51px 26px 40px 26px;
+}
+.close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    z-index: 101;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.titleLog, .titleReg{
+    text-align: center;
+    color: #0B0B0B;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 22.56px;
+}
+.titleReg{
+    margin-bottom: 23.04px;
+}
+.formLog, .formReg{
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        &:nth-last-of-type(1){
+            margin-bottom: 5px;
+        }
+        >label{
+            color: #656565;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        >input{
+            max-width: 219px;
+            width: 100%;
+            border: 1px solid #D9D9D9;
+            border-radius: 7px;
+            padding: 10px 11px 11px 11px;
+            color: #0B0B0B;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            &::placeholder{
+                color: #9E9E9E;
+            }
+        }
+    }
+    >p{
+        text-align: right;
+        color: #9E9E9E;
+        font-size: 16px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.formReg{
+    >div{
+        >label{
+            max-width: 85px;
+        }
+        >input{
+            max-width: 206px;
+        }
+    }
+}
+.password{
+    position: relative;
+    >img{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        right: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.btnCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnSubmit{
+    margin: 16px auto;
+    background: #E92424;
+    border-radius: 36px;
+    padding: 12px 27px 12px 29px;
+    min-width: 147px;
+    max-width: 181px;
+    text-align: center;
+    transition: background .3s linear;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    &:hover{
+        cursor: pointer;
+        background: #CC1111;
+    }
+}
+.btnSec{
+    color: #E92424;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
+    >img{
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .modalCont{
+        width: 423px;
+    }
+    .contInner{
+        padding: 38.51px 50px 40px 49px;
+    }
+    .close{
+        top: 25px;
+        right: 26px;
+    }
+    .formLog, .formReg{
+        div{
+            >input{
+                max-width: 231px;
+            }
+        }
+    }
+}
