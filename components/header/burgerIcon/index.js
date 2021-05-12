@@ -32,7 +32,7 @@ export default function BurgerIcon(){
                 <div className={styles.burgerPart} />
                 <div className={styles.absCont}>
                     <div className={styles.decktopMenu}>
-                        <Link href='#'>
+                        <Link href='/sale'>
                             <button>
                                 <img src={precent} alt=''/>
                                 Акції
