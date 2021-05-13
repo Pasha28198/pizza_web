@@ -3,13 +3,13 @@
         display: none;
     }
 }
-.info{
-    width: 360px;
+.scrollCont{
+    border-radius: 16px; 
+    width: 366px;
     height: 350px;
-    overflow: auto;
+    overflow-y: scroll;
     border: 1px solid #E0E0E0;
-    border-radius: none;
-    border-radius: 16px;
+    border-right: none;
     &::-webkit-scrollbar {
         width: 6px;
     }
@@ -35,13 +35,13 @@
             color: #0B0B0B;
         }
     }
-    .info{
+    .scrollCont{
         width: 550px;
         height: 443px;
     }
 }
 @media screen and ( min-width: 1221px){
-    .info{
+    .scrollCont{
         width: 600px;
     }
 }
