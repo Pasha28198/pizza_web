@@ -1,0 +1,114 @@
+.cont{
+    padding: 40px 20px;
+    >h1{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #0B0B0B;
+        margin-bottom: 26px;
+        text-align: center;
+    }
+}
+.item{
+    width: 335px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    padding: 41.64px 0 0 0;
+    text-align: center;
+    margin: 0 auto 20px;
+    >img{
+        margin-bottom: 25px;
+        width: 50px;
+        height: 50px;
+    }
+    >p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #000000;
+    }
+    >span{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #E92424;
+    }
+    &:nth-of-type(1){
+        padding-bottom: 40px;
+        >p{
+            max-width: 214px;
+            margin: 0 auto;
+        }
+        >span{
+            max-width: 200px;
+            margin: 14px auto 0px;
+        }
+        >img{
+            width: 50px;
+            height: 47.27px;
+            margin-bottom: 26.37px;
+        }
+    }
+    &:nth-of-type(2){
+        padding-bottom: 46px;
+        >p{
+            max-width: 188px;
+            margin: 0 auto;
+            &:nth-of-type(1){
+                margin: 0 auto 14px;
+            }
+        }
+    }
+    &:nth-of-type(3){
+        padding-bottom: 51px;
+        >p{
+            max-width: 214px;
+            margin: 0 auto;
+        }
+    }
+    &:nth-of-type(4){
+        padding-bottom: 50px;
+        >p{
+            max-width: 186px;
+            margin: 0 auto 20px;
+        }
+        >a{
+            color: #E92424;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (min-width: 720px) {
+    .cont{
+        >div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media screen and (min-width: 950px) {
+    .cont{
+        padding: 60px 0 80px;
+        >h1{
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        >div{
+            justify-content: center;
+        }
+    }
+    .item{
+        width: 268px;
+        margin: 0;
+        margin-right: 20px;
+        &:nth-of-type(4){
+            margin-right: 0;
+        }
+    }
+}

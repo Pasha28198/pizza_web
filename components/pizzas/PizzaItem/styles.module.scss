@@ -152,9 +152,11 @@
 @media screen and (min-width: 1200px) {
     .btnType{
         display: none;
+        height: 0;
     }
     .addIng{
         display: none;
+        height: 0;
     }
     .itemContent{
         padding: 12px 0px 40px;
@@ -165,9 +167,17 @@
         &:hover{
             .btnType{
                 display: block;
+                animation-name: hoverAnimBtn;
+                animation-duration: .3s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
             }
             .addIng{
                 display: block;
+                animation-name: hoverAnimAdd;
+                animation-duration: .1s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
             }
             
             .itemContent{
@@ -181,5 +191,21 @@
             }
             
         }
+    }
+}
+@keyframes hoverAnimBtn {
+    from{
+        height: 0;
+    }
+    to{
+        height: 36px;
+    }
+}
+@keyframes hoverAnimAdd {
+    from{
+        height: 0;
+    }
+    to{
+        height: 30px;
     }
 }

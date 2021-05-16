@@ -25,9 +25,6 @@ export default function Footer(){
                         <Link href='#'>
                             <a>Доставка і оплата</a>
                         </Link>
-                        <Link href='#'>
-                            <a>Новини</a>
-                        </Link>
                     </div>
                     <div className={styles.contacts}>
                         <h4>Контакти</h4>

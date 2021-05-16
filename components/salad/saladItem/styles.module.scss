@@ -126,6 +126,7 @@
         position: relative;
         background-color: #FFFFFF;
         &:hover{
+            min-height: 519px;
             .saladInfo{
                 position: absolute;
                 top: 304px;
@@ -139,8 +140,29 @@
             .infoSub{
                 >button{
                     display: block;
+                    display: block;
+                    animation-name: hoverAnimBtn;
+                    animation-duration: .3s;
+                    animation-fill-mode: forwards;
+                    animation-timing-function: ease-out;
                 }   
             }
         }
     }
 }
+@keyframes hoverAnimBtn {
+    from{
+        height: 0;
+    }
+    to{
+        height: 45px;
+    }
+}
+// @keyframes hoverAnimAdd {
+//     from{
+//         height: 0;
+//     }
+//     to{
+//         height: 30px;
+//     }
+// }

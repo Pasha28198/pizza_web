@@ -141,6 +141,7 @@
     .drinksCont{
         position: relative;
         &:hover{
+            min-height: 499px;
             .drinksInfo{
                 padding: 41px 24px 20px;
                 position: absolute;
@@ -151,11 +152,35 @@
             .infoSub{
                 >button{
                     display: block;
+                    animation-name: hoverAnimAdd;
+                    animation-duration: .1s;
+                    animation-fill-mode: forwards;
+                    animation-timing-function: ease-out;
                 }   
             }
             .volumeBtn{
                 display: flex;
+                animation-name: hoverAnimBtn;
+                animation-duration: .3s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
             }
         }
+    }
+}
+@keyframes hoverAnimBtn {
+    from{
+        height: 0;
+    }
+    to{
+        height: 36px;
+    }
+}
+@keyframes hoverAnimAdd {
+    from{
+        height: 0;
+    }
+    to{
+        height: 45px;
     }
 }
