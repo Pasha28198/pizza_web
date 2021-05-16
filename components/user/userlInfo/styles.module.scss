@@ -49,10 +49,10 @@
     }
 }
 .errMes{
-    justify-content: center;
     font-size: 12px;
     line-height: 1.1;
     color: #E92424;
+    margin-left: 88px;
 }
 .bithBig{
     display: none;
@@ -160,6 +160,9 @@
         >img{
             margin-left: 34px;
         }
+    }
+    .errMes{
+        margin-left: 115px;
     }
 }
 @media screen and ( min-width: 1440px){

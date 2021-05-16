@@ -8,25 +8,33 @@ import styles from './styles.module.scss'
 
 export default function MobileMenu(){
 
-    let { open } = useMobileMenuCtx()
+    let { open, setOpen } = useMobileMenuCtx()
 
     return(
-        <div className={open ? styles.mobileMenuContX : styles.mobileMenuCont}>
+        <div onClick={()=>setOpen()} className={open ? styles.mobileMenuContX : styles.mobileMenuCont}>
             <div className={styles.closeBtn}>
                 <BurgerIcon />
             </div>
-            <nav className={styles.mobNav}>
-                <Link href='#'>
+            <nav  className={styles.mobNav}>
+                <Link href='/sale'>
                     <a>Про нас</a>
                 </Link>
-                <Link href='#'>
+                <Link href='/delivery'>
                     <a>Доставка і оплата</a>
                 </Link>
-                <Link href='#'>
-                    <a>Новини</a>
-                </Link>
             </nav>
-            <button className={styles.btnMobMenu}>Особистий кабінет</button>
+             {/* <Link href='/user'>
+                <button 
+                    className={styles.btnMobMenu}>
+                        Увійти
+                </button>
+            </Link> */}
+            <Link href='/user'>
+                <button 
+                    className={styles.btnMobMenu}>
+                        Особистий кабінет
+                </button>
+            </Link>
             <button className={styles.btnMobMenuExit}>Вийти</button>
             <div className={styles.contacts}>
                 <h4>Контакти:</h4>
