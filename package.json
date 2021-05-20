@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prestart:prod": "next start -p $PORT",
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT"
@@ -20,5 +21,7 @@
     "slick-carousel": "^1.8.1",
     "yup": "^0.32.9"
   },
-  "cacheDirectories": [".next/cache"]
+  "cacheDirectories": [
+    ".next/cache"
+  ]
 }
