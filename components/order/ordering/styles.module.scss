@@ -249,6 +249,7 @@
 }
 @media screen and (min-width: 1200px){
     .contMain{
+        min-height: calc(100vh - 410px);
         min-width: 713px;
         margin: 0 12px 0 0;
         >h3{

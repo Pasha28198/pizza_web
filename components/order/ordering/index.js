@@ -109,15 +109,7 @@ export default function Ordering(){
                         />
                     </div>
                     <div className={styles.colCommitCont}>
-                        <div className={styles.coll}>
-                            <input 
-                                className={styles.checkBoxColl}
-                                type='checkbox'
-                                name='coll'
-                                id='collOffer'
-                            />
-                            <label htmlFor='coll'>Перезвонити для підтвердження</label>
-                        </div>
+                        
                         <div className={styles.comment}>
                             <label onClick={()=>setComment(!comment)} htmlFor='comment'>Додати коментар до замовлення</label>
                             {
