@@ -19,11 +19,11 @@ export default function Footer(){
                                 <img src={logo} alt='logo'/>
                             </div>
                         </Link>
-                        <Link href='#'>
-                            <a>Про нас</a>
-                        </Link>
-                        <Link href='#'>
+                        <Link href='/delivery'>
                             <a>Доставка і оплата</a>
+                        </Link>
+                        <Link href='/sale'>
+                            <a>Новини</a>
                         </Link>
                     </div>
                     <div className={styles.contacts}>
