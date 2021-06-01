@@ -21,19 +21,19 @@ export default function SliderComponent(){
                 <Slider {...settings}>
                     <div className={styles.sliderElement}>
                         <div className={styles.sliderImgMob} />
-                        <div className={styles.bigSlider} />
+                        <div className={styles.bigSlider1} />
                     </div>
                     <div className={styles.sliderElement}>
                         <div className={styles.sliderImgMob} />
-                        <div className={styles.bigSlider} />
+                        <div className={styles.bigSlider2} />
                     </div>
                     <div className={styles.sliderElement}>
                         <div className={styles.sliderImgMob} />
-                        <div className={styles.bigSlider} />
+                        <div className={styles.bigSlider3} />
                     </div>
                     <div className={styles.sliderElement}>
                         <div className={styles.sliderImgMob} />
-                        <div className={styles.bigSlider} />
+                        <div className={styles.bigSlider4} />
                     </div>
                 </Slider>
             </div>
