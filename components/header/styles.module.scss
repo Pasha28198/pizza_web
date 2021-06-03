@@ -38,13 +38,14 @@
         min-width: 68px;
         min-height: 46.92px; 
     }
-    .headerCont{
-        padding: 19px 155.67px 19px 154px;
-    }
+    
 }
-@media screen and ( min-width: 1440px){
+@media screen and ( min-width: 1439px){
     .categoriesMax{
         margin-left: 87.07px;
-        margin-right: 97px;
+        margin-right: 97px; 
+    }
+    .headerCont{
+        padding: 19px 155.67px 19px 154px;
     }
 }
