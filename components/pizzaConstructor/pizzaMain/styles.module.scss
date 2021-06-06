@@ -44,25 +44,51 @@
     }
 }
 .typeBtn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 36px;
-    >button{
-        font-weight: 400;
-        font-size: 16px;
-        color: #4D4D4D;
-        padding: 9px 0 8px;
-        text-align: center;
-        width: 140px;
-        border-radius: 7px;
-        background-color: #F5F5F5;
-        transition: background-color .3s linear;
-        &:hover{
-            cursor: pointer;
-            background-color: #FFE178;
-        }
-        &:nth-of-type(1){
-            margin-right: 8px;
-        }
+    //>button{
+    //    font-weight: 400;
+    //    font-size: 16px;
+    //    color: #4D4D4D;
+    //    padding: 9px 0 8px;
+    //    text-align: center;
+    //    width: 140px;
+    //    border-radius: 7px;
+    //    background-color: #F5F5F5;
+    //    transition: background-color .3s linear;
+    //    &:hover{
+    //        cursor: pointer;
+    //        background-color: #FFE178;
+    //    }
+    //    &:nth-of-type(1){
+    //        //margin-right: 8px;
+    //    }
+    //}
+}
+
+.btn{
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+    padding: 9px 0 8px;
+    text-align: center;
+    width: 140px;
+    border-radius: 7px;
+    background-color: #F5F5F5;
+    transition: background-color .3s linear;
+    &:hover{
+        cursor: pointer;
+        background-color: #FFE178;
     }
+    &:nth-of-type(1){
+        //margin-right: 8px;
+    }
+}
+
+.activeChoise{
+    background-color: #FFE178;
 }
 .infoPizza{
     margin-bottom: 20px;

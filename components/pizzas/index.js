@@ -1,23 +1,29 @@
+import {useContext} from 'react';
 import PizzaItem from './PizzaItem/index'
 import styles from './styles.module.scss'
+import {observer} from "mobx-react";
 
-export default function Pizzas(){
-    return(
+import {ProductsStoreInstanceCTX} from '../../stores/PostStore';
+import {toJS} from "mobx";
+
+const Pizzas = observer(() => {
+
+    const {products} = useContext(ProductsStoreInstanceCTX)
+
+    console.log(toJS(products))
+
+    return (
         <div className='container'>
             <div className={styles.pizzaType}>
                 <h2>Піцца</h2>
                 <div>
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
-                    <PizzaItem />
+                    {products.map((item) => {
+                        return <PizzaItem item={item}/>
+                    })}
                 </div>
             </div>
         </div>
     )
-}
+})
+
+export default Pizzas;

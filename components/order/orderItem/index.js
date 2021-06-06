@@ -6,29 +6,29 @@ import imgBig from '../../../assets/orderImg/imgBig.png'
 
 import styles from './styles.module.scss'
 
-export default function OrderItem(){
-    return(
+export default function OrderItem({item, decreaseCount, increaseCount, deleteProduct}) {
+    return (
         <div className={styles.itemCont}>
             <div className={styles.itemDesc}>
                 <img className={styles.mobImg} src={imgMob} alt=''/>
                 <img className={styles.bigImg} src={imgBig} alt=''/>
                 <div className={styles.infoItem}>
-                    <h5>Салат</h5>
-                    <p>250 гр</p>
-                    <h4>220 грн</h4>
+                    <h5>{item?.product.title}</h5>
+                    <p>{item?.product.choise.mass} гр</p>
+                    <h4>{item?.product.choise.price * item?.count} грн</h4>
                 </div>
             </div>
             <div className={styles.control}>
                 <div>
                     <div className={styles.delete}>
-                        <img src={deleteImg} alt=''/>
+                        <img onClick={deleteProduct} src={deleteImg} alt=''/>
                     </div>
-                   <div className={styles.changeInner}> 
-                        <div><img src={minusImg} alt=''/></div>
-                            <p>1</p>        
-                        <div><img src={plusImg} alt=''/></div>
-                   </div>
-               </div>
+                    <div className={styles.changeInner}>
+                        <div onClick={decreaseCount}><img src={minusImg} alt=''/></div>
+                        <p> {item?.count}</p>
+                        <div onClick={increaseCount}><img src={plusImg} alt=''/></div>
+                    </div>
+                </div>
             </div>
         </div>
     )

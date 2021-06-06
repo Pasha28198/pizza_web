@@ -4,15 +4,15 @@ import MobileMenu from "../mobileMenu"
 
 import styles from './styles.module.scss'
 
-export default function Layout({children}){
-    return(
-        <div>
+export default function Layout({children}) {
+    return (
+        <div className={styles.wrapper}>
             <div className={styles.stikyCont}>
-                <Header />
-                <MobileMenu />
+                <Header/>
+                <MobileMenu/>
             </div>
             {children}
-            <Footer />
+            <Footer/>
         </div>
     )
 }

@@ -1,44 +1,59 @@
 import Link from 'next/link'
-
+import {useContext} from 'react'
 import PizzaSvg from '../../svgImg/pizzaSvg'
 import SaladSvg from '../../svgImg/saladSvg'
 import DrinksSvg from '../../svgImg/drinksSvg'
 
 import styles from './styles.module.scss'
+import {ProductsStoreInstanceCTX} from "../../../stores/PostStore";
+import {observer} from "mobx-react";
 
-export default function Categories(){
-    return(
+const Categories = observer(() => {
+
+    const {categories, getProducts} = useContext(ProductsStoreInstanceCTX)
+
+    const clickCategory = (id) => {
+        getProducts(id)
+    }
+    return (
         <div className={styles.categories}>
-            <Link href='/'>
-                <a>
-                    <div className={styles.catItem}>
-                        <div className={styles.imgCont1}>
-                            <PizzaSvg />
+            {categories.map((item) => {
+
+                const categories = (name) => {
+                    switch (name) {
+                        case 'Піца':
+                            return {
+                                href: '/',
+                                img: <PizzaSvg/>
+                            }
+                        case 'Салати':
+                            return {
+                                href: '/salad',
+                                img: <SaladSvg/>
+                            }
+                        case 'Напої':
+                            return {
+                                href: '/drinks',
+                                img: <DrinksSvg/>
+                            }
+                        default:
+                            return '/'
+                    }
+                }
+
+                return <Link href={categories(item.name).href} key={item._id}>
+                    <a>
+                        <div onClick={() => clickCategory(item._id)} className={styles.catItem}>
+                            <div className={styles.imgCont1}>
+                                {categories(item.name).img}
+                            </div>
+                            <div>{item.name}</div>
                         </div>
-                        <div>Піцци</div>
-                    </div>
-                </a>
-            </Link>
-            <Link href='/salad'>
-                <a>
-                    <div className={styles.catItem}>
-                        <div className={styles.imgCont2}>
-                            <SaladSvg />
-                        </div>
-                        <div>Салати</div>
-                    </div>
-                </a>
-            </Link>
-            <Link href='/drinks'>
-                <a>
-                    <div className={styles.catItem}>
-                        <div className={styles.imgCont3}>
-                            <DrinksSvg />
-                        </div>                        
-                        <div>Напої</div>
-                    </div>
-                </a>
-            </Link>
+                    </a>
+                </Link>
+            })}
         </div>
     )
-}
+})
+
+export default Categories;

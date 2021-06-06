@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from './styles.module.scss'
 import arr from '../../assets/general/selectArrr.svg'
 
-export default function Select({options}){
+export default function Select({options, value, onChange}){
 
     const [current, setCurrent] = useState(options ? options[0] : ' ')
     const [isListOpen, setIsListOpen] = useState(false)
+
+    useEffect(()=>{setCurrent(value || options[0])},[options])
 
     const renderOptionsList = (options) => {
         if(options){
@@ -32,6 +34,7 @@ export default function Select({options}){
     const getChoosenValue = (e) => {
         openListHandler()
         setCurrent(e.target.innerText)
+        onChange(e.target.innerText)
     }
 
     return(

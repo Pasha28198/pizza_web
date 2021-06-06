@@ -19,6 +19,7 @@
     }
 }
 .saladInfo{
+    width: 100%;
     padding: 12px 24px 20px;
     border-bottom: 1px solid #E5E5E5; 
     border-left: 1px solid #E5E5E5; 
@@ -145,7 +146,7 @@
                     animation-duration: .3s;
                     animation-fill-mode: forwards;
                     animation-timing-function: ease-out;
-                }   
+                }
             }
         }
     }

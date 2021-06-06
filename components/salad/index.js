@@ -1,20 +1,23 @@
 import SaladItem from "./saladItem"
 
 import styles from './styles.module.scss'
+import {ProductsStoreInstanceCTX} from "../../stores/PostStore";
+import {useContext} from 'react';
+import {observer} from "mobx-react";
 
-export default function SaladList(){
-    return(
+const SaladList = observer(() => {
+    const {products} = useContext(ProductsStoreInstanceCTX)
+    
+    return (
         <div className={styles.listCont}>
             <h2>Салати</h2>
             <div>
-                <SaladItem />
-                <SaladItem />
-                <SaladItem />
-                <SaladItem />
-                <SaladItem />
-                <SaladItem />
-                <SaladItem />
+                {products.map((item) => {
+                    return <SaladItem item={item} key={item._id}/>
+                })}
             </div>
         </div>
     )
-}
+})
+
+export default SaladList;

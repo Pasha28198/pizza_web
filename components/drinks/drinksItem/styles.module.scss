@@ -19,6 +19,7 @@
     }
 }
 .drinksInfo{
+    width: 100%;
     padding: 12px 24px 20px;
     border-bottom: 1px solid #E5E5E5; 
     border-left: 1px solid #E5E5E5; 
@@ -59,28 +60,48 @@
 }
 .volumeBtn{
     display: none;
-    margin-bottom: 20px;
-    >button{
-        flex: 1 1 auto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.2;
-        color: #404040;
-        background: #F5F5F5;
-        border-radius: 7px;
-        padding: 9px 0 8px 0;
-        transition: background 0.3s linear;
-        &:hover{
-            cursor: pointer;
-            background: #FFE178;
-        }
-        &:nth-child(1){
-            margin-right: 5px;
-        }
-        &:nth-child(3){
-            margin-left: 5px;
-        }
-    }  
+    //margin-bottom: 20px;
+    //>button{
+    //    flex: 1 1 auto;
+    //    font-size: 16px;
+    //    font-weight: 400;
+    //    line-height: 1.2;
+    //    color: #404040;
+    //    background: #F5F5F5;
+    //    border-radius: 7px;
+    //    padding: 9px 0 8px 0;
+    //    transition: background 0.3s linear;
+    //    &:hover{
+    //        cursor: pointer;
+    //        background: #FFE178;
+    //    }
+    //    &:nth-child(1){
+    //        margin-right: 5px;
+    //    }
+    //    &:nth-child(3){
+    //        margin-left: 5px;
+    //    }
+    //}
+}
+.btnType{
+    color: #404040;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    border-radius: 7px;
+    background-color: #F5F5F5;
+    padding: 9px 0 8px;
+    width: 140px;
+    text-align: center;
+    transition: background-color 0.3s linear;
+    &:hover{
+        cursor: pointer;
+        background-color: #FFE178;
+    }
+}
+
+.activeChoise{
+    background-color: #FFE178;
 }
 .infoSub{
     display: flex;

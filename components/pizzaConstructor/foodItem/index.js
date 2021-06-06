@@ -9,9 +9,9 @@ import minusImg from '../../../assets/constModal/minus.svg'
 import good from '../../../assets/constModal/good.svg'
 import PlusSvg from '../../svgImg/plus'
 
-export default function FoodItem(){
+export default function FoodItem({ingredient, count}){
 
-    const [counter, setCounter] = useState(1)
+    const [counter, setCounter] = useState(count || 0)
 
     const plus = () => {
         setCounter(counter+1)
@@ -27,8 +27,8 @@ export default function FoodItem(){
             </div>
             <img src={chicken} alt=''/>
             <div className={styles.desc}>
-                <h6>Курка</h6>
-                <p>50гр/40 грн</p>
+                <h6>{ingredient?.name}</h6>
+                <p>50гр/{ingredient?.price} грн</p>
             </div>
             {
                 counter

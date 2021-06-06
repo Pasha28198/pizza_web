@@ -1,9 +1,14 @@
 import SaladList from "../components/salad";
 
-export default function Salad(){
+
+const Salad = () => {
+
+
     return(
         <div className='container'>
             <SaladList />
         </div>
     )
 }
+
+export default Salad;

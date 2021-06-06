@@ -7,8 +7,11 @@ import mail from '../../assets/footerIcon/mail.svg'
 import gps from '../../assets/footerIcon/gps.svg'
 import visa from '../../assets/footerIcon/visa.png'
 import master from '../../assets/footerIcon/mastercard.png'
+import {ProductsStoreInstanceCTX} from "../../stores/PostStore";
 
 export default function Footer(){
+
+
     return(
         <div className={styles.footerCont}>
             <div className='container'>
@@ -43,6 +46,7 @@ export default function Footer(){
                     </div>
                     <div className={styles.menu}>
                         <h4>Меню</h4>
+                        {}
                         <Link href='/'>
                             <a>Піца</a>
                         </Link>
