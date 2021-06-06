@@ -5,10 +5,12 @@
 }
 .sliderElement{
     .sliderImgMob{
+        border-radius: 16px;
         height: 300px;
         background: url('../../assets/slider/sliderMob.png') center / cover no-repeat;
     }
-    .bigSlider{
+    .bigSlider1, .bigSlider2,
+    .bigSlider3, .bigSlider4{
         display: none;
     }
 }
@@ -17,16 +19,30 @@
         max-width: 100%;
         height: 428px;
         overflow: hidden;
+        padding: 0 27px;
     }
     .sliderElement{
         .sliderImgMob{
             display: none!important;
         }
-        .bigSlider{
+        .bigSlider1, .bigSlider2,
+        .bigSlider3, .bigSlider4{
             display: block;
             height: 428px;
-            max-width: 1440px;
-            background: url('../../assets/slider/sliderImg.png') center / cover no-repeat;
+            // max-width: 1386px;
+            border-radius: 16px;
+        }
+        .bigSlider1{
+            background: url('../../assets/slider/sliderImg1.png') center / cover no-repeat;
+        }
+        .bigSlider2{
+            background: url('../../assets/slider/sliderImg2.png') center / cover no-repeat;
+        }
+        .bigSlider3{
+            background: url('../../assets/slider/sliderImg3.png') center / cover no-repeat;
+        }
+        .bigSlider4{
+            background: url('../../assets/slider/sliderImg4.png') center / cover no-repeat;
         }
     }
   }

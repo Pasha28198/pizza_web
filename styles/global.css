@@ -7,14 +7,14 @@ ul.slick-dots{
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     right: 0px;
 }
 
 .slick-dots li{
     list-style: none;
-    width: 14px;
-    height: 14px;
+    width: 14px!important;
+    height: 14px!important;
     border-radius: 50%;
     border: 1px solid #868686;
     margin: 0 5px;
