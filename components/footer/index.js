@@ -57,13 +57,7 @@ export default function Footer(){
                             <a>Напої</a>
                         </Link>
                     </div>
-                    <div className={styles.creditCards}>
-                        <span>Підтримувані платежі:</span>
-                        <div>
-                            <img src={visa} alt=''/>
-                            <img src={master} alt=''/>
-                        </div>
-                    </div>
+
                 </div>
                 <div className={styles.rules}>
                     <sup>©</sup> 2002 - 2021  Всі права захищені

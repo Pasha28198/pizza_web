@@ -33,12 +33,12 @@ const PizzaMain = observer(() => {
   const [isOpen, setIsOpen] = useState(false);
 
   const modalHandler = (e) => {
-    e.preventDefault();
+
     setIsOpen(!isOpen);
   };
 
   const [choiseActive, setChoiseActive] = useState({ type: "ghhj" });
-
+  console.log(process.env.NEXT_PUBLIC_URL)
   return (
     <div className="container">
       <div className={styles.mainCont}>

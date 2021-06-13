@@ -29,13 +29,13 @@ export default function MobileMenu(){
                         Увійти
                 </button>
             </Link> */}
-            <Link href='/user'>
-                <button 
-                    className={styles.btnMobMenu}>
-                        Особистий кабінет
-                </button>
-            </Link>
-            <button className={styles.btnMobMenuExit}>Вийти</button>
+            {/*<Link href='/user'>*/}
+            {/*    <button */}
+            {/*        className={styles.btnMobMenu}>*/}
+            {/*            Особистий кабінет*/}
+            {/*    </button>*/}
+            {/*</Link>*/}
+            {/*<button className={styles.btnMobMenuExit}>Вийти</button>*/}
             <div className={styles.contacts}>
                 <h4>Контакти:</h4>
                 <p>+38 (067) 63 71 444</p>
