@@ -10,6 +10,8 @@ import pizzaImg from "../../../assets/pizzaItemImg/pizza.png";
 import pizzaImgDeck from "../../../assets/pizzaItemImg/pizzaDeck.png";
 import { BasketStoreInstanceCTX } from "../../../stores/basket_store";
 import { ProductsStoreInstanceCTX } from "../../../stores/PostStore";
+import Backdrop from "../../backdrop";
+import ModalConst from "../../pizzaConstructor/modalConstr";
 
 const PizzaItem = ({ item }) => {
   const [isLike, setIsLike] = useState(false);
@@ -27,10 +29,17 @@ const PizzaItem = ({ item }) => {
 
   const [choiseActive, setChoiseActive] = useState({});
 
+  const modalHandler = (e) => {
+
+    setIsOpen(!isOpen);
+  };
+
   const addProductToBasket = () => {
     const product = productToBasket(item._id, choiseActive._id);
     addProduct(product);
   };
+
+  const [isOpen, setIsOpen] = useState(false);
   console.log(process.env.NEXT_PUBLIC_URL);
   return (
     <div className={styles.itemContainer}>
@@ -91,9 +100,18 @@ const PizzaItem = ({ item }) => {
           </button>
         </div>
         <div className={styles.addIng}>
-          <div>+ Додати інгрідієнти</div>
+          <div onClick={(e) => modalHandler(e)} >+ Додати інгрідієнти</div>
         </div>
       </div>
+      {isOpen ? (
+          <Backdrop>
+            <ModalConst
+                product={item}
+                choiseActive={choiseActive}
+                modalHandler={modalHandler}
+            />
+          </Backdrop>
+      ) : null}
     </div>
   );
 };

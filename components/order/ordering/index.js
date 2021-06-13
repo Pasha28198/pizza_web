@@ -94,7 +94,12 @@ const Ordering = observer(() => {
                   onChange={(e) => changeUserInfo(e.target)}
                 />
               ) : (
-                <Select options={optAdress} />
+                // <Select options={optAdress} />
+                <input
+                type="text"
+                value={optAdress}
+                disabled
+                />
               )}
             </div>
             <div

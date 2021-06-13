@@ -22,18 +22,18 @@ export default function UserIcon(){
                 </Backdrop>
                 : null
             }
-            <img src={user} alt=''/>
+            {/*<img src={user} alt=''/>*/}
             <div className={styles.btnCont}>
-                <Link href='/user'>
-                    <button className={styles.loginBtn}>
-                        <img src={userBtn} alt=''/>
-                        Особистий кабінет
-                    </button>
-                </Link>
-                <button onClick={()=>setIsOpen(!isOpen)} className={styles.exitBtn}>
-                    <img src={logoutBtn} alt=''/>
-                    Вийти
-                </button>
+                {/*<Link href='/user'>*/}
+                {/*    <button className={styles.loginBtn}>*/}
+                {/*        <img src={userBtn} alt=''/>*/}
+                {/*        Особистий кабінет*/}
+                {/*    </button>*/}
+                {/*</Link>*/}
+                {/*<button onClick={()=>setIsOpen(!isOpen)} className={styles.exitBtn}>*/}
+                {/*    <img src={logoutBtn} alt=''/>*/}
+                {/*    Вийти*/}
+                {/*</button>*/}
             </div>
         </div>
     )

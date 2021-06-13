@@ -52,6 +52,7 @@ const ModalConst = observer(({ modalHandler, product, choiseActive }) => {
     products._id = uuidv4();
 
     addProduct(products);
+    modalHandler()
   };
 
   return (

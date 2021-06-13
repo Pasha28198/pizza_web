@@ -6,6 +6,7 @@ import styles from './styles.module.scss'
 import basket from '../../../assets/headerIcons/basket.svg'
 import {BasketStoreInstanceCTX} from "../../../stores/basket_store";
 import {observer} from "mobx-react";
+import Link from "next/link";
 
  const  Basket = observer(() =>{
     const {productsCount} = useContext(BasketStoreInstanceCTX)
@@ -19,9 +20,11 @@ import {observer} from "mobx-react";
                 <img src={basket} alt=''/>
                 <Cleave />
             </div>
+            <Link href='/order'>
             <button className={styles.btn}>
                Замовити
-            </button> 
+            </button>
+            </Link>
         </div>
     )
 })
