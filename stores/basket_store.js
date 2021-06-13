@@ -34,6 +34,7 @@ class BasketStore {
   comment = "";
 
   changeUserInfo = ({ name, value }) => {
+    console.log({ name, value })
     this[name] = value;
   };
 

@@ -19,7 +19,7 @@ export default function AddItem({ ingredient, addIngredient }) {
       {/*<img src={chicken} alt="" />*/}
       <div className={styles.desc}>
         <h6>{ingredient?.name}</h6>
-        <p>50гр/{ingredient?.price} грн</p>
+        <p>{ingredient?.mass? ingredient?.mass: 50}гр/{ingredient?.price} грн</p>
       </div>
       <div
         className={styles.plusOnly}
