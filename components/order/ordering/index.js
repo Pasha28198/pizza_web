@@ -31,12 +31,12 @@ const Ordering = observer(() => {
 
   const dayChange = (day) => {
     setDate(day);
-    changeUserInfo({ name: "day", day });
+    changeUserInfo({ name: "day", value:day });
   };
 
   const timeChange = (time) => {
     setTime(time);
-    changeUserInfo({ name: "time", time });
+    changeUserInfo({ name: "time", value:time });
   };
 
   return (
