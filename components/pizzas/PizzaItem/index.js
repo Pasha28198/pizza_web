@@ -42,11 +42,22 @@ const PizzaItem = ({ item }) => {
   const [isOpen, setIsOpen] = useState(false);
   console.log(process.env.NEXT_PUBLIC_URL);
   return (
-    <div className={styles.itemContainer}>
+    <div
+        className={styles.itemContainer}
+        style={{
+          overflow: "hidden"
+        }}
+    >
       <Link href={`/pizzaConstructor/${item._id}`}>
         <div className={styles.itemImg}>
           <img src={pizzaImg} alt="pizza" />
-          <img src={`${window?.location?.origin}/images/${item.img.substring(1)}`} alt="pizza" />
+          <img
+              style={{
+                objectFit: "cover"
+              }}
+              src={`${window?.location?.origin}/images/${item.img.substring(1)}`}
+              alt="pizza"
+          />
         </div>
       </Link>
       <div className={styles.itemContent}>
