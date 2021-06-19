@@ -46,7 +46,7 @@ const PizzaItem = ({ item }) => {
       <Link href={`/pizzaConstructor/${item._id}`}>
         <div className={styles.itemImg}>
           <img src={pizzaImg} alt="pizza" />
-          <img src={`${process.env.NEXT_PUBLIC_URL.replace('api', 'images')}${item.img.substring(1)}`} alt="pizza" />
+          <img src={`${window?.location?.origin}/images/${item.img.substring(1)}`} alt="pizza" />
         </div>
       </Link>
       <div className={styles.itemContent}>
