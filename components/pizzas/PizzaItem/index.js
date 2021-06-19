@@ -48,20 +48,17 @@ const PizzaItem = ({ item }) => {
           overflow: "hidden"
         }}
     >
-      <Link href={`/pizzaConstructor/${item._id}`}>
-        <div className={styles.itemImg}>
-          <img src={pizzaImg} alt="pizza" />
-          <img
-              style={{
-                objectFit: "cover"
-              }}
-              src={`${window?.location?.origin}/images/${item.img.substring(1)}`}
-              alt="pizza"
-          />
-        </div>
-      </Link>
+      <div className={styles.itemImg}>
+        <img src={pizzaImg} alt="pizza" />
+        <img
+            style={{
+              objectFit: "cover"
+            }}
+            src={`${window?.location?.origin}/images/${item.img.substring(1)}`}
+            alt="pizza"
+        />
+      </div>
       <div className={styles.itemContent}>
-        <Link href={`/pizzaConstructor/${item._id}`}>
           <div className={styles.itemMainInfo}>
             <div>
               <h4>{item.title} </h4>
@@ -71,7 +68,6 @@ const PizzaItem = ({ item }) => {
               {isLike ? <HeartYel /> : <HeartSvg />}
             </div>
           </div>
-        </Link>
         <div className={styles.itemSubtitle}>
           {item?.ingredients
             ?.map((item) => {
