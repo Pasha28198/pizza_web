@@ -2,7 +2,7 @@ import axios from "axios";
 
 const CToken = axios.CancelToken;
 const previousRequests: any = {};
-const baseURL = "https://pizzavovaapi.herokuapp.com/" || '';
+const baseURL = "https://whiteboxpizza.com.ua/api/" || '';
 const headers = {
     "Access-Control-Allow-Origin": "*",
     "Content-Type": "application/json",
