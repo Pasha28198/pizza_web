@@ -35,7 +35,7 @@ export default function SaladItem({item}) {
                 <div className={styles.infoSup}>
                     <div>
                         <h4>{item.title}</h4>
-                        <p>{choiseActive.mass} гр</p>
+                        <p>{choiseActive?.mass} гр</p>
                     </div>
                     <div onClick={() => setIsLike(!isLike)} className={styles.svgCont}>
                         {isLike ? <HeartYel/> : <HeartSvg/>}
@@ -47,7 +47,7 @@ export default function SaladItem({item}) {
                     }).toString().split(',').join(', ')}
                 </p>
                 <div className={styles.infoSub}>
-                    <h4>{choiseActive.price} грн</h4>
+                    <h4>{choiseActive?.price} грн</h4>
                     <button onClick={addProductToBasket}>Замовити</button>
                 </div>
             </div>

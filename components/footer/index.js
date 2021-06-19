@@ -33,15 +33,15 @@ export default function Footer(){
                         <h4>Контакти</h4>
                         <div>
                             <img src={tel} alt=''/>
-                            <span>(063) 63 63 636</span>
+                            <span>(066) 04 38 795</span>
                         </div>
                         <div>
                             <img src={mail} alt=''/>
-                            <span>example@gmail.com</span>
+                            <span>whiteboxpizza@gmail.com</span>
                         </div>
                         <div>
                             <img src={gps} alt=''/>
-                            <span>Івано-Франківськ<br/>Вул.Ревуцького, 5</span>
+                            <span>м. Івано-Франківськ<br/>Вул.Івасюка, 63</span>
                         </div>
                     </div>
                     <div className={styles.menu}>

@@ -55,7 +55,7 @@ const PizzaItem = ({ item }) => {
             style={{
               objectFit: "cover"
             }}
-            src={`${window?.location?.origin}/images/${item.img.substring(1)}`}
+            src={`${window?.location?.origin}/images/${item?.img?.substring(1)}`}
             alt="pizza"
         />
       </div>
