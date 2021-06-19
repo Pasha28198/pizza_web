@@ -36,6 +36,7 @@ const PizzaItem = ({ item }) => {
 
   const addProductToBasket = () => {
     const product = productToBasket(item._id, choiseActive._id);
+    console.log(product)
     addProduct(product);
   };
 

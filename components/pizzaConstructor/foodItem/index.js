@@ -10,14 +10,7 @@ import good from "../../../assets/constModal/good.svg";
 import PlusSvg from "../../svgImg/plus";
 
 export default function FoodItem({ ingredient, count, addIngredient }) {
-  const [counter, setCounter] = useState(count || 0);
 
-  const plus = () => {
-    setCounter(counter + 1);
-  };
-  const minus = () => {
-    setCounter(counter - 1);
-  };
   return (
     <div className={styles.itemCont}>
       <div className={styles.backdrop}></div>
@@ -29,31 +22,8 @@ export default function FoodItem({ ingredient, count, addIngredient }) {
         <h6>{ingredient?.name}</h6>
         <p>50гр/{ingredient?.price} грн</p>
       </div>
-      {counter ? (
-        <div className={styles.delete}>
-          <img src={deleteImg} alt="" />
-        </div>
-      ) : null}
-      {counter ? (
-        <div className={styles.changeCount}>
-          <div className={styles.changeInner}>
-            <div onClick={() => minus()}>
-              <img src={minusImg} alt="" />
-            </div>
-            <p>{counter}</p>
-            <div onClick={() => plus()}>
-              <PlusSvg />
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div
-          className={styles.plusOnly}
-          onClick={() => addIngredient(ingredient)}
-        >
-          <PlusSvg />
-        </div>
-      )}
+
+
     </div>
   );
 }

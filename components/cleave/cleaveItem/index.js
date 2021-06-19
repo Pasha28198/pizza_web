@@ -7,7 +7,7 @@ import {toJS} from "mobx";
 
 export default function CleaveItem({item, decreaseCount, increaseCount, deleteProduct}) {
 
-
+    console.log(item)
     const priceProd = (count, priceProduct) => {
         return count * priceProduct
     }
@@ -15,7 +15,7 @@ export default function CleaveItem({item, decreaseCount, increaseCount, deletePr
         <div className={styles.itemCont}>
             <div className={styles.itemTopInfo}>
                 <div>
-                    <h5>{item?.product?.title}</h5>
+                    <h5>{item?.product?.title}<span style={{fontSize: 14}}> ({item?.product.choise.type})</span></h5>
                     <p>{item?.product?.choise?.mass} гр</p>
                 </div>
                 <div>

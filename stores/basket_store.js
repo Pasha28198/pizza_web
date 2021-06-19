@@ -230,12 +230,11 @@ class BasketStore {
   };
 
   addProduct = (product) => {
-    const productExistInCart = this.basket[product._id];
-
+    const productExistInCart = this.basket[product.choise._id];
     if (productExistInCart) {
-      this.increaseCount(product._id);
-    } else {
-      this.basket[product._id] = {
+      this.increaseCount(product.choise._id);
+    }else if(this.basket[product?.choise?._id]?.choise?._id !== product?.choise?._id){
+      this.basket[product.choise._id] = {
         product,
         count: 1,
       };

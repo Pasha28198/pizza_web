@@ -18,11 +18,13 @@ import {observer} from "mobx-react";
             <div className={styles.cleaveCont}>
                 <div className={styles.cleaveList}>
                     {basketArray.map((item)=>{
+
+                        const productId = item.product.choise._id
                         return  <CleaveItem
 
-                            deleteProduct={() => deleteProduct(item.product._id)}
-                            increaseCount={() => increaseCount(item.product._id)}
-                            decreaseCount={() => decreaseCount(item.product._id)}
+                            deleteProduct={() => deleteProduct(productId)}
+                            increaseCount={() => increaseCount(productId)}
+                            decreaseCount={() => decreaseCount(productId)}
                             item={item}
                         />
                     })}

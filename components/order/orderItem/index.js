@@ -13,7 +13,7 @@ export default function OrderItem({item, decreaseCount, increaseCount, deletePro
                 <img className={styles.mobImg} src={imgMob} alt=''/>
                 <img className={styles.bigImg} src={imgBig} alt=''/>
                 <div className={styles.infoItem}>
-                    <h5>{item?.product.title}</h5>
+                    <h5>{item?.product.title}<span style={{fontSize: 14}}> ({item?.product.choise.type})</span></h5>
                     <p>{item?.product.choise.mass} гр</p>
                     <h4>{item?.product.choise.price * item?.count} грн</h4>
                 </div>
