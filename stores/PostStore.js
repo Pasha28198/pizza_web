@@ -93,7 +93,7 @@ class ProductsStore {
       choise:{
 
         ...choise,
-        price: priceOrder
+        price: priceOrder?priceOrder:choise.price
       },
       initialIngredients,
     });

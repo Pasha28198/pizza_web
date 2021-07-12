@@ -23,8 +23,8 @@ import {observer} from "mobx-react";
                         return  <CleaveItem
 
                             deleteProduct={() => deleteProduct(item.id)}
-                            increaseCount={() => increaseCount(productId)}
-                            decreaseCount={() => decreaseCount(productId)}
+                            increaseCount={() => increaseCount(item.id)}
+                            decreaseCount={() => decreaseCount(item.id)}
                             item={item}
                         />
                     })}
