@@ -7,7 +7,7 @@ import {toJS} from "mobx";
 
 export default function CleaveItem({item, decreaseCount, increaseCount, deleteProduct}) {
 
-    console.log(item)
+    console.log(item.product?.initialIngredients)
     const priceProd = (count, priceProduct) => {
         return count * priceProduct
     }
@@ -18,10 +18,14 @@ export default function CleaveItem({item, decreaseCount, increaseCount, deletePr
                     <h5>{item?.product?.title}<span style={{fontSize: 14}}> ({item?.product.choise.type})</span></h5>
                     <p>{item?.product?.choise?.mass} гр</p>
                 </div>
+
                 <div>
                     <img src={deleteImg} alt='' onClick={deleteProduct}/>
                 </div>
             </div>
+            <div>{item?.product?.initialIngredients?.map((item)=>{
+                return <span style={{fontSize: 14}}>{item.ingredient.name}, </span>
+            })}</div>
             <div className={styles.itemSubInfo}>
                 <div>
                     <img onClick={decreaseCount} src={minus} alt=''/>

@@ -7,11 +7,12 @@ import imgBig from '../../../assets/orderImg/imgBig.png'
 import styles from './styles.module.scss'
 
 export default function OrderItem({item, decreaseCount, increaseCount, deleteProduct}) {
+    console.log(item)
     return (
         <div className={styles.itemCont}>
             <div className={styles.itemDesc}>
-                <img className={styles.mobImg} src={imgMob} alt=''/>
-                <img className={styles.bigImg} src={imgBig} alt=''/>
+                <img className={styles.mobImg} src={item.product.img} alt=''/>
+                <img className={styles.bigImg} src={item.product.img} alt=''/>
                 <div className={styles.infoItem}>
                     <h5>{item?.product.title}<span style={{fontSize: 14}}> ({item?.product.choise.type})</span></h5>
                     <p>{item?.product.choise.mass} гр</p>

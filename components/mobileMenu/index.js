@@ -38,7 +38,7 @@ export default function MobileMenu(){
             {/*<button className={styles.btnMobMenuExit}>Вийти</button>*/}
             <div className={styles.contacts}>
                 <h4>Контакти:</h4>
-                <p>+38 (067) 63 71 444</p>
+                <p>+38 (066) 04 38 795</p>
                 <p>
                     Щодня з 10:00 до 21:00
                     Пт - Нд: з 10:00 до 22:00

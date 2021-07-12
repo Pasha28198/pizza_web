@@ -60,5 +60,5 @@ export const optPay = [
     'Картою кур’єру',
 ]
 export const optAdress = [
-    'вул. Здолбунівська 4б',
+    'вул.Івасюка, 63',
 ]

@@ -133,7 +133,7 @@ class BasketStore {
 
     const products = Object.values(this.basket).map((item) => {
       console.log(item);
-      const ingr = item.product.initialIngredients.map(
+      const ingr = item?.product?.initialIngredients?.map(
         ({ count, ingredient }) => {
           return {
             count,
@@ -230,11 +230,21 @@ class BasketStore {
   };
 
   addProduct = (product) => {
-    const productExistInCart = this.basket[product.choise._id];
+    console.log(product.initialIngredients?.length)
+    const productExistInCart = this.basket[product.choise._id] && !product.initialIngredients?.length ;
     if (productExistInCart) {
       this.increaseCount(product.choise._id);
+    }else if(this.basket[product?.choise?._id]?.choise?._id !== product?.choise?._id && Boolean(product?.initialIngredients?.length)){
+
+      this.basket[product._id] = {
+        id:product._id,
+        product,
+        count: 1,
+      };
     }else if(this.basket[product?.choise?._id]?.choise?._id !== product?.choise?._id){
+
       this.basket[product.choise._id] = {
+        id:product.choise._id,
         product,
         count: 1,
       };

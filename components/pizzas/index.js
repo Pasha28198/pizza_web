@@ -15,7 +15,7 @@ const Pizzas = observer(() => {
     return (
         <div className='container'>
             <div className={styles.pizzaType}>
-                <h2>Піцца</h2>
+                <h2>Піца</h2>
                 <div>
                     {products.map((item) => {
                         return <PizzaItem item={item}/>

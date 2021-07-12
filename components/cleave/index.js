@@ -12,17 +12,17 @@ import {observer} from "mobx-react";
  const Cleave = observer(() =>{
     const {basketArray, increaseCount, decreaseCount, deleteProduct, basketPrice} = useContext(BasketStoreInstanceCTX)
 
-
+    console.log(basketArray)
     return(
         <div className={styles.absolCont}>
             <div className={styles.cleaveCont}>
                 <div className={styles.cleaveList}>
                     {basketArray.map((item)=>{
-
+                         console.log(item)
                         const productId = item.product.choise._id
                         return  <CleaveItem
 
-                            deleteProduct={() => deleteProduct(productId)}
+                            deleteProduct={() => deleteProduct(item.id)}
                             increaseCount={() => increaseCount(productId)}
                             decreaseCount={() => decreaseCount(productId)}
                             item={item}

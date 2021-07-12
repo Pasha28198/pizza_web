@@ -35,6 +35,7 @@ const ModalConst = observer(({ modalHandler, product, choiseActive }) => {
   }, [newIngredientsArray]);
 
   const addProductToBasket = () => {
+    console.log('addProductToBasket')
     function uuidv4() {
       return "xxxxxxxxxxxxхxxxyxxxxxxx".replace(/[xy]/g, function (c) {
         var r = (Math.random() * 16) | 0,
@@ -45,12 +46,16 @@ const ModalConst = observer(({ modalHandler, product, choiseActive }) => {
     const products = productToBasket(
       product._id,
       choiseActive._id,
-      newIngredientsArray
+      newIngredientsArray,
+        priceOrder
     );
+    console.log({priceOrder})
 
-    products.choise.price = priceOrder;
+
+
+    // products.choise.price = priceOrder;
     products._id = uuidv4();
-
+    console.log({products})
     addProduct(products);
     modalHandler()
   };

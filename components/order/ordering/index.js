@@ -13,6 +13,9 @@ import {
 import styles from "./styles.module.scss";
 import { BasketStoreInstanceCTX } from "../../../stores/basket_store";
 import { observer } from "mobx-react";
+import Backdrop from "../../backdrop";
+import ModalConst from "../../pizzaConstructor/modalConstr";
+import ModalSuccess from "../../pizzaConstructor/modalSucces";
 
 const Ordering = observer(() => {
   const { basketPrice, postOrder, changeUserInfo } = useContext(
@@ -38,9 +41,25 @@ const Ordering = observer(() => {
     setTime(time);
     changeUserInfo({ name: "time", value:time });
   };
+  const [successOrder, setSuccessOrder] =useState(false)
+  console.log(successOrder)
+  const clickOrder = async () => {
+    try{
+      await  postOrder()
+      setSuccessOrder(true)
+    }catch (e) {
+      setSuccessOrder(false)
+    }
+
+  }
 
   return (
     <div className={styles.contMain}>
+      {successOrder ? (
+          <Backdrop>
+            <ModalSuccess modalHandler={()=>{setSuccessOrder(false)}}/>
+          </Backdrop>
+      ) : null}
       <h3>Оформлення замовлення</h3>
       <div className={styles.formCont}>
         <div onClick={() => deliveryHandler()} className={styles.btnCont}>
@@ -183,7 +202,7 @@ const Ordering = observer(() => {
         <p>
           До сплати:<span>{basketPrice()} </span>грн
         </p>
-        <button onClick={postOrder}>Оформити замовлення</button>
+        <button onClick={clickOrder}>Оформити замовлення</button>
       </div>
     </div>
   );

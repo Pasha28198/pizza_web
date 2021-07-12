@@ -79,17 +79,26 @@ class ProductsStore {
     }
   }
 
-  productToBasket = (productId, choiseId, initialIngredients) => {
+  productToBasket = (productId, choiseId, initialIngredients, priceOrder) => {
     const product = this.products.filter((item) => item._id === productId)[0];
     const choise = product?.choise.filter((item) => item._id === choiseId)[0];
 
     console.log(toJS(product));
+    console.log({priceOrder}, {choise} )
+
+
 
     const basketProduct = new ProductBasket({
       ...product,
-      choise,
+      choise:{
+
+        ...choise,
+        price: priceOrder
+      },
       initialIngredients,
     });
+
+    console.log({basketProduct})
 
     return basketProduct;
   };

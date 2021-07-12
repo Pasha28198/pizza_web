@@ -8,10 +8,21 @@ import gps from '../../assets/footerIcon/gps.svg'
 import visa from '../../assets/footerIcon/visa.png'
 import master from '../../assets/footerIcon/mastercard.png'
 import {ProductsStoreInstanceCTX} from "../../stores/PostStore";
+import {useContext} from "react";
+import Categories from "../header/categories";
+import {observer} from "mobx-react";
+import PizzaSvg from "../svgImg/pizzaSvg";
+import SaladSvg from "../svgImg/saladSvg";
+import DrinksSvg from "../svgImg/drinksSvg";
 
-export default function Footer(){
+const Footer = observer(()=>{
 
 
+    const {categories, getProducts} = useContext(ProductsStoreInstanceCTX)
+
+    const clickCategory = (id) => {
+        getProducts(id)
+    }
     return(
         <div className={styles.footerCont}>
             <div className='container'>
@@ -26,7 +37,7 @@ export default function Footer(){
                             <a>Доставка і оплата</a>
                         </Link>
                         <Link href='/sale'>
-                            <a>Новини</a>
+                            <a>Акції</a>
                         </Link>
                     </div>
                     <div className={styles.contacts}>
@@ -46,16 +57,32 @@ export default function Footer(){
                     </div>
                     <div className={styles.menu}>
                         <h4>Меню</h4>
-                        {}
-                        <Link href='/'>
-                            <a>Піца</a>
-                        </Link>
-                        <Link href='/salad'>
-                            <a>Салати</a>
-                        </Link>
-                        <Link href='/drinks'>
-                            <a>Напої</a>
-                        </Link>
+                        {categories.map((item)=>{
+                            const categories = (name) => {
+                            switch (name) {
+                                case 'Піца':
+                                    return {
+                                        href: '/',
+                                        img: <PizzaSvg/>
+                                    }
+                                case 'Салати':
+                                    return {
+                                        href: '/salad',
+                                        img: <SaladSvg/>
+                                    }
+                                case 'Напої':
+                                    return {
+                                        href: '/drinks',
+                                        img: <DrinksSvg/>
+                                    }
+                                default:
+                                    return '/'
+                            }
+                        }
+                            return <Link href={categories(item.name).href} key={item._id}>
+                                <a onClick={() => clickCategory(item._id)}>{item.name}</a>
+                            </Link>
+                        })}
                     </div>
 
                 </div>
@@ -65,4 +92,6 @@ export default function Footer(){
             </div>
         </div>
     )
-}
+})
+
+export default Footer;

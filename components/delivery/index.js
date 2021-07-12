@@ -42,7 +42,7 @@ export default function DeliveryMain(){
                     <img src={price} alt=''/>
                     <p>
                         Ви можете забрати піцу на 
-                        самовиніс зі знижкою до 40%
+                        самовиніс зі знижкою до 30%
                     </p>
                     <Link href='/'>
                         Деталі

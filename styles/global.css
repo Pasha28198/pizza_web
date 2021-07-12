@@ -21,7 +21,11 @@ ul.slick-dots{
 }
 
 .slick-dots li button{
-    display: none!important;
+    background: none;
+}
+
+.slick-dots li button:before{
+    content: ''!important;
 }
 
 .slick-dots li.slick-active{

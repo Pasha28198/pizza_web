@@ -7,6 +7,8 @@ import {observer} from "mobx-react";
 
 const SaladList = observer(() => {
     const {products} = useContext(ProductsStoreInstanceCTX)
+
+    console.log(products)
     
     return (
         <div className={styles.listCont}>
