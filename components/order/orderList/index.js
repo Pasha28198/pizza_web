@@ -13,7 +13,8 @@ const OrderList = observer(() => {
             <div className={styles.listCont}>
                 <div className={styles.listContInner}>
                     {basketArray.map((item) => {
-                        const productId = item.product.choise._id
+                        const productId = item.id;
+                        console.log(item)
                         return <OrderItem
                             key={productId}
                             deleteProduct={() => deleteProduct(productId)}
